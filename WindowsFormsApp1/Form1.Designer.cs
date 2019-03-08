@@ -51,6 +51,7 @@
             this.customerbtn.TabIndex = 1;
             this.customerbtn.Text = "Customer";
             this.customerbtn.UseVisualStyleBackColor = true;
+            this.customerbtn.Click += new System.EventHandler(this.customerbtn_Click);
             // 
             // userSelectWindow
             // 

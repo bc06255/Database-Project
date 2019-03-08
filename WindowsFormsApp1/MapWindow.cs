@@ -10,17 +10,26 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class userSelectWindow : Form
+    public partial class MapWindow : Form
     {
-        public userSelectWindow()
+        public MapWindow()
         {
             InitializeComponent();
         }
 
-        private void customerbtn_Click(object sender, EventArgs e)
+        private void GeorgiaTooltip_Popup(object sender, PopupEventArgs e)
         {
-            MapWindow window = new MapWindow();
-            window.Show();
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button34_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
