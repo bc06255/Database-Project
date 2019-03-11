@@ -36,7 +36,6 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.mississippiBtn = new System.Windows.Forms.Button();
-            this.alabamaBtn = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.floridaBtn = new System.Windows.Forms.Button();
@@ -50,14 +49,14 @@
             this.button17 = new System.Windows.Forms.Button();
             this.button18 = new System.Windows.Forms.Button();
             this.button19 = new System.Windows.Forms.Button();
-            this.button20 = new System.Windows.Forms.Button();
+            this.coloradoBtn = new System.Windows.Forms.Button();
             this.button21 = new System.Windows.Forms.Button();
             this.button22 = new System.Windows.Forms.Button();
             this.button23 = new System.Windows.Forms.Button();
             this.californiaBtn = new System.Windows.Forms.Button();
             this.button25 = new System.Windows.Forms.Button();
             this.button26 = new System.Windows.Forms.Button();
-            this.button27 = new System.Windows.Forms.Button();
+            this.arizonaBtn = new System.Windows.Forms.Button();
             this.button28 = new System.Windows.Forms.Button();
             this.button29 = new System.Windows.Forms.Button();
             this.button30 = new System.Windows.Forms.Button();
@@ -74,9 +73,10 @@
             this.button41 = new System.Windows.Forms.Button();
             this.button42 = new System.Windows.Forms.Button();
             this.button43 = new System.Windows.Forms.Button();
-            this.button44 = new System.Windows.Forms.Button();
-            this.button45 = new System.Windows.Forms.Button();
+            this.delawareBtn = new System.Windows.Forms.Button();
+            this.connecticutBtn = new System.Windows.Forms.Button();
             this.button46 = new System.Windows.Forms.Button();
+            this.alabamaBtn = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -99,7 +99,6 @@
             this.arkansasBtn.Size = new System.Drawing.Size(65, 23);
             this.arkansasBtn.TabIndex = 2;
             this.arkansasBtn.Text = "Arkansas";
-            this.toolTip1.SetToolTip(this.arkansasBtn, "Airports: 3                                          \r\nPopulation: 35,000");
             this.arkansasBtn.UseVisualStyleBackColor = true;
             // 
             // tennesseeBtn
@@ -141,16 +140,6 @@
             this.mississippiBtn.Text = "Mississippi";
             this.toolTip1.SetToolTip(this.mississippiBtn, "Airports: 3                                          \r\nPopulation: 35,000");
             this.mississippiBtn.UseVisualStyleBackColor = true;
-            // 
-            // alabamaBtn
-            // 
-            this.alabamaBtn.Location = new System.Drawing.Point(979, 610);
-            this.alabamaBtn.Name = "alabamaBtn";
-            this.alabamaBtn.Size = new System.Drawing.Size(65, 23);
-            this.alabamaBtn.TabIndex = 7;
-            this.alabamaBtn.Text = "Alabama";
-            this.toolTip1.SetToolTip(this.alabamaBtn, "Airports: 3                                          \r\nPopulation: 35,000");
-            this.alabamaBtn.UseVisualStyleBackColor = true;
             // 
             // button7
             // 
@@ -282,15 +271,15 @@
             this.toolTip1.SetToolTip(this.button19, "Airports: 3                                          \r\nPopulation: 35,000");
             this.button19.UseVisualStyleBackColor = true;
             // 
-            // button20
+            // coloradoBtn
             // 
-            this.button20.Location = new System.Drawing.Point(463, 406);
-            this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(68, 23);
-            this.button20.TabIndex = 21;
-            this.button20.Text = "Colorado";
-            this.toolTip1.SetToolTip(this.button20, "Airports: 3                                          \r\nPopulation: 35,000");
-            this.button20.UseVisualStyleBackColor = true;
+            this.coloradoBtn.Location = new System.Drawing.Point(463, 406);
+            this.coloradoBtn.Name = "coloradoBtn";
+            this.coloradoBtn.Size = new System.Drawing.Size(68, 23);
+            this.coloradoBtn.TabIndex = 21;
+            this.coloradoBtn.Text = "Colorado";
+            this.toolTip1.SetToolTip(this.coloradoBtn, "Airports: 3                                          \r\nPopulation: 35,000");
+            this.coloradoBtn.UseVisualStyleBackColor = true;
             // 
             // button21
             // 
@@ -352,15 +341,15 @@
             this.toolTip1.SetToolTip(this.button26, "Airports: 3                                          \r\nPopulation: 35,000");
             this.button26.UseVisualStyleBackColor = true;
             // 
-            // button27
+            // arizonaBtn
             // 
-            this.button27.Location = new System.Drawing.Point(278, 556);
-            this.button27.Name = "button27";
-            this.button27.Size = new System.Drawing.Size(68, 23);
-            this.button27.TabIndex = 28;
-            this.button27.Text = "Arizona";
-            this.toolTip1.SetToolTip(this.button27, "Airports: 3                                          \r\nPopulation: 35,000");
-            this.button27.UseVisualStyleBackColor = true;
+            this.arizonaBtn.Location = new System.Drawing.Point(278, 556);
+            this.arizonaBtn.Name = "arizonaBtn";
+            this.arizonaBtn.Size = new System.Drawing.Size(68, 23);
+            this.arizonaBtn.TabIndex = 28;
+            this.arizonaBtn.Text = "Arizona";
+            this.toolTip1.SetToolTip(this.arizonaBtn, "Airports: 3                                          \r\nPopulation: 35,000");
+            this.arizonaBtn.UseVisualStyleBackColor = true;
             // 
             // button28
             // 
@@ -523,25 +512,25 @@
             this.toolTip1.SetToolTip(this.button43, "Airports: 3                                          \r\nPopulation: 35,000");
             this.button43.UseVisualStyleBackColor = true;
             // 
-            // button44
+            // delawareBtn
             // 
-            this.button44.Location = new System.Drawing.Point(1292, 339);
-            this.button44.Name = "button44";
-            this.button44.Size = new System.Drawing.Size(68, 23);
-            this.button44.TabIndex = 45;
-            this.button44.Text = "Delaware";
-            this.toolTip1.SetToolTip(this.button44, "Airports: 3                                          \r\nPopulation: 35,000");
-            this.button44.UseVisualStyleBackColor = true;
+            this.delawareBtn.Location = new System.Drawing.Point(1292, 339);
+            this.delawareBtn.Name = "delawareBtn";
+            this.delawareBtn.Size = new System.Drawing.Size(68, 23);
+            this.delawareBtn.TabIndex = 45;
+            this.delawareBtn.Text = "Delaware";
+            this.toolTip1.SetToolTip(this.delawareBtn, "Airports: 3                                          \r\nPopulation: 35,000");
+            this.delawareBtn.UseVisualStyleBackColor = true;
             // 
-            // button45
+            // connecticutBtn
             // 
-            this.button45.Location = new System.Drawing.Point(1333, 264);
-            this.button45.Name = "button45";
-            this.button45.Size = new System.Drawing.Size(77, 23);
-            this.button45.TabIndex = 46;
-            this.button45.Text = "Connecticut";
-            this.toolTip1.SetToolTip(this.button45, "Airports: 3                                          \r\nPopulation: 35,000");
-            this.button45.UseVisualStyleBackColor = true;
+            this.connecticutBtn.Location = new System.Drawing.Point(1333, 264);
+            this.connecticutBtn.Name = "connecticutBtn";
+            this.connecticutBtn.Size = new System.Drawing.Size(77, 23);
+            this.connecticutBtn.TabIndex = 46;
+            this.connecticutBtn.Text = "Connecticut";
+            this.toolTip1.SetToolTip(this.connecticutBtn, "Airports: 3                                          \r\nPopulation: 35,000");
+            this.connecticutBtn.UseVisualStyleBackColor = true;
             // 
             // button46
             // 
@@ -553,6 +542,15 @@
             this.toolTip1.SetToolTip(this.button46, "Airports: 3                                          \r\nPopulation: 35,000");
             this.button46.UseVisualStyleBackColor = true;
             this.button46.Click += new System.EventHandler(this.button46_Click);
+            // 
+            // alabamaBtn
+            // 
+            this.alabamaBtn.Location = new System.Drawing.Point(979, 610);
+            this.alabamaBtn.Name = "alabamaBtn";
+            this.alabamaBtn.Size = new System.Drawing.Size(65, 23);
+            this.alabamaBtn.TabIndex = 7;
+            this.alabamaBtn.Text = "Alabama";
+            this.alabamaBtn.UseVisualStyleBackColor = true;
             // 
             // pictureBox1
             // 
@@ -569,8 +567,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1466, 967);
             this.Controls.Add(this.button46);
-            this.Controls.Add(this.button45);
-            this.Controls.Add(this.button44);
+            this.Controls.Add(this.connecticutBtn);
+            this.Controls.Add(this.delawareBtn);
             this.Controls.Add(this.button43);
             this.Controls.Add(this.button42);
             this.Controls.Add(this.button41);
@@ -587,14 +585,14 @@
             this.Controls.Add(this.button30);
             this.Controls.Add(this.button29);
             this.Controls.Add(this.button28);
-            this.Controls.Add(this.button27);
+            this.Controls.Add(this.arizonaBtn);
             this.Controls.Add(this.button26);
             this.Controls.Add(this.button25);
             this.Controls.Add(this.californiaBtn);
             this.Controls.Add(this.button23);
             this.Controls.Add(this.button22);
             this.Controls.Add(this.button21);
-            this.Controls.Add(this.button20);
+            this.Controls.Add(this.coloradoBtn);
             this.Controls.Add(this.button19);
             this.Controls.Add(this.button18);
             this.Controls.Add(this.button17);
@@ -647,14 +645,14 @@
         private System.Windows.Forms.Button button17;
         private System.Windows.Forms.Button button18;
         private System.Windows.Forms.Button button19;
-        private System.Windows.Forms.Button button20;
+        private System.Windows.Forms.Button coloradoBtn;
         private System.Windows.Forms.Button button21;
         private System.Windows.Forms.Button button22;
         private System.Windows.Forms.Button button23;
         private System.Windows.Forms.Button californiaBtn;
         private System.Windows.Forms.Button button25;
         private System.Windows.Forms.Button button26;
-        private System.Windows.Forms.Button button27;
+        private System.Windows.Forms.Button arizonaBtn;
         private System.Windows.Forms.Button button28;
         private System.Windows.Forms.Button button29;
         private System.Windows.Forms.Button button30;
@@ -671,8 +669,8 @@
         private System.Windows.Forms.Button button41;
         private System.Windows.Forms.Button button42;
         private System.Windows.Forms.Button button43;
-        private System.Windows.Forms.Button button44;
-        private System.Windows.Forms.Button button45;
+        private System.Windows.Forms.Button delawareBtn;
+        private System.Windows.Forms.Button connecticutBtn;
         private System.Windows.Forms.Button button46;
     }
 }
