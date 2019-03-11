@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class userSelectWindow : Form
+    public partial class AirportSearch : Form
     {
-        public userSelectWindow()
+        public AirportSearch()
         {
             InitializeComponent();
-        }
-
-        private void customerbtn_Click(object sender, EventArgs e)
-        {
-            MapWindow window = new MapWindow();
-            window.Show();
         }
     }
 }
