@@ -20,6 +20,7 @@ namespace WindowsFormsApp1
             airlineBtn.Visible = false;
             flightBtn.Visible = false;
             planeModelBtn.Visible = false;
+            backBtn.Visible = false;
         }
 
         
@@ -32,11 +33,24 @@ namespace WindowsFormsApp1
             airlineBtn.Visible = true;
             flightBtn.Visible = true;
             planeModelBtn.Visible = true;
+            backBtn.Visible = true;
         }
 
         private void searchLbl_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void backBtn_Click(object sender, EventArgs e)
+        {
+            searchLbl.Visible = false;
+            airportBtn.Visible = false;
+            airlineBtn.Visible = false;
+            flightBtn.Visible = false;
+            planeModelBtn.Visible = false;
+            backBtn.Visible = false;
+            customerbtn.Visible = true;
+            employeebtn.Visible = true;
         }
     }
 

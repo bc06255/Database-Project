@@ -98,5 +98,11 @@
   <ItemGroup>
     <None Include="Properties\united_states_map1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\alaska_outline_map.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\louisiana.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

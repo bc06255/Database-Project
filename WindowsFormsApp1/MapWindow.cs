@@ -13,32 +13,43 @@ namespace WindowsFormsApp1
 {
     public partial class MapWindow : Form
     {
+        userSelectWindow window = new userSelectWindow();
         public MapWindow()
         {
             InitializeComponent();
             SqlDataReader reader;
             SqlCommand cmd;
-            String[] stateText = new String[50];
-            for (int i = 0; i< 50; i++)
+
+            
+
+            String[] numAirports, mostPopular, stateText;
+            String[] totalPassengers;
+            numAirports = mostPopular = new String[50];
+            totalPassengers = new String[50];
+            stateText = new String[50];
+            int[] num = new int[50];
+
+            
+
+            for (int i = 0; i < 50; i++)
             {
                 stateText[i] = "Airports:\t\t";
             }
-            String alaskaText, alabamaText, arkansasText, arizonaText, californiaText, coloradoText, connecticutText, delawareText, floridaText, georgiaText;
-            alaskaText = alabamaText = arkansasText = arizonaText = georgiaText = californiaText = coloradoText = connecticutText = delawareText = floridaText = "Airports:\t\t";
-            String[] numAirports, mostPopular;
-            numAirports = mostPopular = new string[50];
 
             using (SqlConnection connection = new SqlConnection("Data Source=DESKTOP-PG47RQQ;Initial Catalog=US_Airports;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False;"))
             {
                 connection.Open();
-                using (cmd = new SqlCommand("SELECT AirportState, COUNT(*) AS Airports FROM Airport GROUP BY AirportState " , connection))
+                using (cmd = new SqlCommand("SELECT AirportState, COUNT(*) AS Airports, SUM(PassengersPerYear) AS TotalPassengers FROM Airport GROUP BY AirportState " , connection))
                 {
                     reader = cmd.ExecuteReader();
-
+                    var totlpssngrs = reader.GetOrdinal("TotalPassengers");
                     int i = 0;
                     while (reader.Read())
                     {
                         numAirports[i] = String.Format("{0}", reader["Airports"]);
+                        totalPassengers[i] = String.Format("{0}", reader["TotalPassengers"]); 
+                        num[i] = int.Parse(totalPassengers[i], System.Globalization.NumberStyles.AllowThousands);
+                        totalPassengers[i] = Convert.ToDecimal(num[i]).ToString("#,##0");
                         i++;
                     }
 
@@ -46,7 +57,7 @@ namespace WindowsFormsApp1
                     {
                         stateText[i] += numAirports[i] + "\n";
                     }
-                    stateText[7] = "Airports:\t\t0\n";
+                    stateText[7] = "Airports:\t\t0\n";  
                     reader.Close();
                 }
                 using (cmd = new SqlCommand("SELECT a.AirportState, a.AirportName, a.PassengersPerYear FROM(SELECT AirportState, MAX(PassengersPerYear) AS MostPopular " +
@@ -62,9 +73,12 @@ namespace WindowsFormsApp1
                         i++;
                     }
 
+                  
+
                     for (i = 0; i < 50; i++)
                     {
-                        stateText[i] += "Most Popular:\t" + mostPopular[i];
+                        stateText[i] += "Most Popular:\t" + mostPopular[i] + "\n";
+                        stateText[i] += "Total Passengers:\t" + totalPassengers[i];
                     }
                     reader.Close();
 
@@ -72,42 +86,171 @@ namespace WindowsFormsApp1
                
 
             }
-           
-            toolTip1.SetToolTip(this.alabamaBtn, stateText[1]);
-            toolTip1.SetToolTip(this.arkansasBtn, stateText[2]);
-            toolTip1.SetToolTip(this.arizonaBtn, stateText[3]);
-            toolTip1.SetToolTip(this.californiaBtn, stateText[4]);
-            toolTip1.SetToolTip(this.coloradoBtn, stateText[5]);
-            toolTip1.SetToolTip(this.connecticutBtn, stateText[6]);
-            toolTip1.SetToolTip(this.delawareBtn, stateText[7]);
-            toolTip1.SetToolTip(this.floridaBtn, stateText[8]);
-            toolTip1.SetToolTip(this.georgiaBtn, stateText[9]);
+
+            Button[] buttonArray = { alaskaBtn, alabamaBtn, arkansasBtn, arizonaBtn, californiaBtn, coloradoBtn, connecticutBtn, delawareBtn, floridaBtn, georgiaBtn, hawaiiBtn, idahoBtn, illinoisBtn, indianaBtn,
+            iowaBtn, kansasBtn, kentuckyBtn, louisianaBtn, massachusettsBtn, marylandBtn, maineBtn,  michiganBtn, minnesotaBtn, missouriBtn, mississippiBtn, montanaBtn, northCarolinaBtn, northDakotaBtn, nebraskaBtn,
+            newHampshireBtn, newJerseyBtn, newMexicoBtn, nevadaBtn, newYorkBtn, ohioBtn, oklahomaBtn, oregonBtn, pennsylvaniaBtn, rhodeIslandBtn,
+            southCarolinaBtn, southDakotaBtn, tennesseeBtn, texasBtn, utahBtn, virginiaBtn, vermontBtn, washingtonBtn, wisconsinBtn, westVirginaBtn, wyomingBtn };
+            for (int i=0; i<buttonArray.Length; i++)
+            {
+                toolTip1.SetToolTip(buttonArray[i], stateText[i]);
+            }
+            
         }
 
-        private void GeorgiaTooltip_Popup(object sender, PopupEventArgs e)
+        private void georgiaBtn_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            userSelectWindow window = new userSelectWindow();
             window.Show();
-
-            
-            
-
-
         }
 
-        private void button34_Click(object sender, EventArgs e)
+        private void floridaBtn_Click(object sender, EventArgs e)
         {
-
+            window.Show();
         }
 
-        private void button46_Click(object sender, EventArgs e)
+        private void alabamaBtn_Click(object sender, EventArgs e)
         {
+            window.Show();
+        }
 
+        private void mississippiBtn_Click(object sender, EventArgs e)
+        {
+            window.Show();
+        }
+
+        private void tennesseeBtn_Click(object sender, EventArgs e)
+        {
+            window.Show();
+        }
+
+        private void southCarolinaBtn_Click(object sender, EventArgs e)
+        {
+            window.Show();
+        }
+
+        private void northCarolinaBtn_Click(object sender, EventArgs e)
+        {
+            window.Show();
+        }
+
+        private void virginiaBtn_Click(object sender, EventArgs e)
+        {
+            window.Show();
+        }
+
+        private void westVirginaBtn_Click(object sender, EventArgs e)
+        {
+            window.Show();
+        }
+
+        private void kentuckyBtn_Click(object sender, EventArgs e)
+        {
+            window.Show();
+        }
+
+        private void pennsylvaniaBtn_Click(object sender, EventArgs e)
+        {
+            window.Show();
+        }
+
+        private void marylandBtn_Click(object sender, EventArgs e)
+        {
+            window.Show();
+        }
+
+        private void delawareBtn_Click(object sender, EventArgs e)
+        {
+            window.Show();
+        }
+
+        private void newJerseyBtn_Click(object sender, EventArgs e)
+        {
+            window.Show();
+        }
+
+        private void connecticutBtn_Click(object sender, EventArgs e)
+        {
+            window.Show();
+        }
+
+        private void rhodeIslandBtn_Click(object sender, EventArgs e)
+        {
+            window.Show();
+        }
+        
+        private void massachusettsBtn_Click(object sender, EventArgs e)
+        {
+            window.Show();
+        }
+
+        private void maineBtn_Click(object sender, EventArgs e)
+        {
+            window.Show();
+        }
+
+        private void newHampshireBtn_Click(object sender, EventArgs e)
+        {
+            window.Show();
+        }
+
+        private void vermontBtn_Click(object sender, EventArgs e)
+        {
+            window.Show();
+        }
+
+        private void newYorkBtn_Click(object sender, EventArgs e)
+        {
+            window.Show();
+        }
+
+        private void ohioBtn_Click(object sender, EventArgs e)
+        {
+            window.Show();
+        }
+
+        private void indianaBtn_Click(object sender, EventArgs e)
+        {
+            window.Show();
+        }
+
+        private void michiganBtn_Click(object sender, EventArgs e)
+        {
+            window.Show();
+        }
+
+        private void illinoisBtn_Click(object sender, EventArgs e)
+        {
+            window.Show();
+        }
+
+        private void wisconsinBtn_Click(object sender, EventArgs e)
+        {
+            window.Show();
+        }
+
+        private void minnesotaBtn_Click(object sender, EventArgs e)
+        {
+            window.Show();
+        }
+
+        private void iowaBtn_Click(object sender, EventArgs e)
+        {
+            window.Show();
+        }
+
+        private void missouriBtn_Click(object sender, EventArgs e)
+        {
+            window.Show();
+        }
+
+        private void arkansasBtn_Click(object sender, EventArgs e)
+        {
+            window.Show();
+        }
+
+        private void louisianaBtn_Click(object sender, EventArgs e)
+        {
+            window.Show();
         }
     }
 }
