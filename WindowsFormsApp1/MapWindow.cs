@@ -14,13 +14,12 @@ namespace WindowsFormsApp1
     public partial class MapWindow : Form
     {
         userSelectWindow window = new userSelectWindow();
+        public int statenum = 50;
         public MapWindow()
         {
             InitializeComponent();
             SqlDataReader reader;
             SqlCommand cmd;
-
-            
 
             String[] numAirports, mostPopular, stateText;
             String[] totalPassengers;
@@ -28,9 +27,7 @@ namespace WindowsFormsApp1
             totalPassengers = new String[50];
             stateText = new String[50];
             int[] num = new int[50];
-
-            
-
+                        
             for (int i = 0; i < 50; i++)
             {
                 stateText[i] = "Airports:\t\t";
@@ -98,47 +95,92 @@ namespace WindowsFormsApp1
             
         }
 
-        private void georgiaBtn_Click(object sender, EventArgs e)
+        private void alaskaBtn_Click(object sender, EventArgs e)
         {
-            window.Show();
-        }
-
-        private void floridaBtn_Click(object sender, EventArgs e)
-        {
+            window.SetState(0);
             window.Show();
         }
 
         private void alabamaBtn_Click(object sender, EventArgs e)
         {
+            window.SetState(1);
             window.Show();
         }
 
-        private void mississippiBtn_Click(object sender, EventArgs e)
+        private void arkansasBtn_Click(object sender, EventArgs e)
+        {
+            window.SetState(2);
+            window.Show();
+        }
+
+        private void arizonaBtn_Click(object sender, EventArgs e)
+        {
+            window.SetState(3);
+            window.Show();
+        }
+
+        private void californiaBtn_Click(object sender, EventArgs e)
+        {
+            window.SetState(4);
+            window.Show();
+        }
+
+        private void coloradoBtn_Click(object sender, EventArgs e)
+        {
+            window.SetState(5);
+            window.Show();
+        }
+
+        private void connecticutBtn_Click(object sender, EventArgs e)
+        {
+            window.SetState(6);
+            window.Show();
+        }
+
+        private void delawareBtn_Click(object sender, EventArgs e)
+        {
+            window.SetState(7);
+            window.Show();
+        }
+
+        private void floridaBtn_Click(object sender, EventArgs e)
+        {
+            window.SetState(8);
+            window.Show();
+        }
+        
+        private void georgiaBtn_Click(object sender, EventArgs e)
+        {
+            window.SetState(9);
+            window.Show();
+        }
+
+        private void hawaiiBtn_Click(object sender, EventArgs e)
         {
             window.Show();
         }
 
-        private void tennesseeBtn_Click(object sender, EventArgs e)
+        private void idahoBtn_Click(object sender, EventArgs e)
         {
             window.Show();
         }
 
-        private void southCarolinaBtn_Click(object sender, EventArgs e)
+        private void illinoisBtn_Click(object sender, EventArgs e)
         {
             window.Show();
         }
 
-        private void northCarolinaBtn_Click(object sender, EventArgs e)
+        private void indianaBtn_Click(object sender, EventArgs e)
         {
             window.Show();
         }
 
-        private void virginiaBtn_Click(object sender, EventArgs e)
+        private void iowaBtn_Click(object sender, EventArgs e)
         {
             window.Show();
         }
 
-        private void westVirginaBtn_Click(object sender, EventArgs e)
+        private void kansasBtn_Click(object sender, EventArgs e)
         {
             window.Show();
         }
@@ -148,7 +190,12 @@ namespace WindowsFormsApp1
             window.Show();
         }
 
-        private void pennsylvaniaBtn_Click(object sender, EventArgs e)
+        private void louisianaBtn_Click(object sender, EventArgs e)
+        {
+            window.Show();
+        }
+
+        private void massachusettsBtn_Click(object sender, EventArgs e)
         {
             window.Show();
         }
@@ -158,32 +205,47 @@ namespace WindowsFormsApp1
             window.Show();
         }
 
-        private void delawareBtn_Click(object sender, EventArgs e)
-        {
-            window.Show();
-        }
-
-        private void newJerseyBtn_Click(object sender, EventArgs e)
-        {
-            window.Show();
-        }
-
-        private void connecticutBtn_Click(object sender, EventArgs e)
-        {
-            window.Show();
-        }
-
-        private void rhodeIslandBtn_Click(object sender, EventArgs e)
-        {
-            window.Show();
-        }
-        
-        private void massachusettsBtn_Click(object sender, EventArgs e)
-        {
-            window.Show();
-        }
-
         private void maineBtn_Click(object sender, EventArgs e)
+        {
+            window.Show();
+        }
+
+        private void michiganBtn_Click(object sender, EventArgs e)
+        {
+            window.Show();
+        }
+
+        private void minnesotaBtn_Click(object sender, EventArgs e)
+        {
+            window.Show();
+        }
+
+        private void missouriBtn_Click(object sender, EventArgs e)
+        {
+            window.Show();
+        }
+
+        private void mississippiBtn_Click(object sender, EventArgs e)
+        {
+            window.Show();
+        }
+
+        private void montanaBtn_Click(object sender, EventArgs e)
+        {
+            window.Show();
+        }
+
+        private void northCarolinaBtn_Click(object sender, EventArgs e)
+        {
+            window.Show();
+        }
+
+        private void northDakotaBtn_Click(object sender, EventArgs e)
+        {
+            window.Show();
+        }
+
+        private void nebraskaBtn_Click(object sender, EventArgs e)
         {
             window.Show();
         }
@@ -193,7 +255,17 @@ namespace WindowsFormsApp1
             window.Show();
         }
 
-        private void vermontBtn_Click(object sender, EventArgs e)
+        private void newJerseyBtn_Click(object sender, EventArgs e)
+        {
+            window.Show();
+        }
+
+        private void newMexicoBtn_Click(object sender, EventArgs e)
+        {
+            window.Show();
+        }
+
+        private void nevadaBtn_Click(object sender, EventArgs e)
         {
             window.Show();
         }
@@ -208,17 +280,62 @@ namespace WindowsFormsApp1
             window.Show();
         }
 
-        private void indianaBtn_Click(object sender, EventArgs e)
+        private void oklahomaBtn_Click(object sender, EventArgs e)
         {
             window.Show();
         }
 
-        private void michiganBtn_Click(object sender, EventArgs e)
+        private void oregonBtn_Click(object sender, EventArgs e)
         {
             window.Show();
         }
 
-        private void illinoisBtn_Click(object sender, EventArgs e)
+        private void pennsylvaniaBtn_Click(object sender, EventArgs e)
+        {
+            window.Show();
+        }
+
+        private void rhodeIslandBtn_Click(object sender, EventArgs e)
+        {
+            window.Show();
+        }
+
+        private void southCarolinaBtn_Click(object sender, EventArgs e)
+        {
+            window.Show();
+        }
+
+        private void southDakotaBtn_Click(object sender, EventArgs e)
+        {
+            window.Show();
+        }
+
+        private void tennesseeBtn_Click(object sender, EventArgs e)
+        {
+            window.Show();
+        }
+
+        private void texasBtn_Click(object sender, EventArgs e)
+        {
+            window.Show();
+        }
+
+        private void utahBtn_Click(object sender, EventArgs e)
+        {
+            window.Show();
+        }
+
+        private void virginiaBtn_Click(object sender, EventArgs e)
+        {
+            window.Show();
+        }
+
+        private void vermontBtn_Click(object sender, EventArgs e)
+        {
+            window.Show();
+        }
+
+        private void washingtonBtn_Click(object sender, EventArgs e)
         {
             window.Show();
         }
@@ -228,29 +345,94 @@ namespace WindowsFormsApp1
             window.Show();
         }
 
-        private void minnesotaBtn_Click(object sender, EventArgs e)
+        private void westVirginaBtn_Click(object sender, EventArgs e)
         {
             window.Show();
         }
 
-        private void iowaBtn_Click(object sender, EventArgs e)
+        private void wyomingBtn_Click(object sender, EventArgs e)
         {
             window.Show();
         }
 
-        private void missouriBtn_Click(object sender, EventArgs e)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
             window.Show();
         }
 
-        private void arkansasBtn_Click(object sender, EventArgs e)
-        {
-            window.Show();
-        }
+        
 
-        private void louisianaBtn_Click(object sender, EventArgs e)
-        {
-            window.Show();
-        }
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
     }
+
 }

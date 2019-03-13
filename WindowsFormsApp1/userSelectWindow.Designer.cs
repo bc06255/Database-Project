@@ -62,12 +62,12 @@
             // searchLbl
             // 
             this.searchLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchLbl.Location = new System.Drawing.Point(56, 0);
+            this.searchLbl.Location = new System.Drawing.Point(12, 0);
             this.searchLbl.Name = "searchLbl";
-            this.searchLbl.Size = new System.Drawing.Size(229, 42);
+            this.searchLbl.Size = new System.Drawing.Size(291, 42);
             this.searchLbl.TabIndex = 2;
             this.searchLbl.Text = "Search For:";
-            this.searchLbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.searchLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.searchLbl.Click += new System.EventHandler(this.searchLbl_Click);
             // 
             // airportBtn
@@ -79,6 +79,7 @@
             this.airportBtn.TabIndex = 3;
             this.airportBtn.Text = "Airport";
             this.airportBtn.UseVisualStyleBackColor = true;
+            this.airportBtn.Click += new System.EventHandler(this.airportBtn_Click);
             // 
             // airlineBtn
             // 
@@ -113,11 +114,11 @@
             // backBtn
             // 
             this.backBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.backBtn.Location = new System.Drawing.Point(7, 5);
+            this.backBtn.Location = new System.Drawing.Point(12, 294);
             this.backBtn.Name = "backBtn";
-            this.backBtn.Size = new System.Drawing.Size(43, 34);
+            this.backBtn.Size = new System.Drawing.Size(291, 34);
             this.backBtn.TabIndex = 7;
-            this.backBtn.Text = "<";
+            this.backBtn.Text = "Back";
             this.backBtn.UseVisualStyleBackColor = true;
             this.backBtn.Click += new System.EventHandler(this.backBtn_Click);
             // 
@@ -125,7 +126,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(315, 299);
+            this.ClientSize = new System.Drawing.Size(315, 335);
             this.Controls.Add(this.backBtn);
             this.Controls.Add(this.planeModelBtn);
             this.Controls.Add(this.flightBtn);

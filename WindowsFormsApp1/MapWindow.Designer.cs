@@ -86,9 +86,9 @@
             // 
             // georgiaBtn
             // 
-            this.georgiaBtn.Location = new System.Drawing.Point(1194, 687);
+            this.georgiaBtn.Location = new System.Drawing.Point(1209, 687);
             this.georgiaBtn.Name = "georgiaBtn";
-            this.georgiaBtn.Size = new System.Drawing.Size(65, 23);
+            this.georgiaBtn.Size = new System.Drawing.Size(53, 23);
             this.georgiaBtn.TabIndex = 1;
             this.georgiaBtn.Text = "Georgia";
             this.georgiaBtn.UseVisualStyleBackColor = true;
@@ -106,9 +106,9 @@
             // 
             // northCarolinaBtn
             // 
-            this.northCarolinaBtn.Location = new System.Drawing.Point(1312, 549);
+            this.northCarolinaBtn.Location = new System.Drawing.Point(1324, 548);
             this.northCarolinaBtn.Name = "northCarolinaBtn";
-            this.northCarolinaBtn.Size = new System.Drawing.Size(65, 44);
+            this.northCarolinaBtn.Size = new System.Drawing.Size(53, 44);
             this.northCarolinaBtn.TabIndex = 4;
             this.northCarolinaBtn.Text = "North\r\nCarolina\r\n";
             this.northCarolinaBtn.UseVisualStyleBackColor = true;
@@ -116,9 +116,9 @@
             // 
             // southCarolinaBtn
             // 
-            this.southCarolinaBtn.Location = new System.Drawing.Point(1275, 618);
+            this.southCarolinaBtn.Location = new System.Drawing.Point(1289, 624);
             this.southCarolinaBtn.Name = "southCarolinaBtn";
-            this.southCarolinaBtn.Size = new System.Drawing.Size(65, 40);
+            this.southCarolinaBtn.Size = new System.Drawing.Size(54, 40);
             this.southCarolinaBtn.TabIndex = 5;
             this.southCarolinaBtn.Text = "South Carolina";
             this.southCarolinaBtn.UseVisualStyleBackColor = true;
@@ -152,12 +152,13 @@
             this.kansasBtn.TabIndex = 9;
             this.kansasBtn.Text = "Kansas";
             this.kansasBtn.UseVisualStyleBackColor = true;
+            this.kansasBtn.Click += new System.EventHandler(this.kansasBtn_Click);
             // 
             // floridaBtn
             // 
-            this.floridaBtn.Location = new System.Drawing.Point(1275, 846);
+            this.floridaBtn.Location = new System.Drawing.Point(1289, 844);
             this.floridaBtn.Name = "floridaBtn";
-            this.floridaBtn.Size = new System.Drawing.Size(68, 23);
+            this.floridaBtn.Size = new System.Drawing.Size(49, 23);
             this.floridaBtn.TabIndex = 10;
             this.floridaBtn.Text = "Florida";
             this.floridaBtn.UseVisualStyleBackColor = true;
@@ -167,12 +168,13 @@
             // 
             this.texasBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.texasBtn.FlatAppearance.BorderSize = 0;
-            this.texasBtn.Location = new System.Drawing.Point(702, 758);
+            this.texasBtn.Location = new System.Drawing.Point(713, 769);
             this.texasBtn.Name = "texasBtn";
-            this.texasBtn.Size = new System.Drawing.Size(68, 23);
+            this.texasBtn.Size = new System.Drawing.Size(48, 23);
             this.texasBtn.TabIndex = 12;
             this.texasBtn.Text = "Texas";
             this.texasBtn.UseVisualStyleBackColor = true;
+            this.texasBtn.Click += new System.EventHandler(this.texasBtn_Click);
             // 
             // oklahomaBtn
             // 
@@ -182,6 +184,7 @@
             this.oklahomaBtn.TabIndex = 13;
             this.oklahomaBtn.Text = "Oklahoma";
             this.oklahomaBtn.UseVisualStyleBackColor = true;
+            this.oklahomaBtn.Click += new System.EventHandler(this.oklahomaBtn_Click);
             // 
             // missouriBtn
             // 
@@ -201,6 +204,7 @@
             this.idahoBtn.TabIndex = 15;
             this.idahoBtn.Text = "Idaho";
             this.idahoBtn.UseVisualStyleBackColor = true;
+            this.idahoBtn.Click += new System.EventHandler(this.idahoBtn_Click);
             // 
             // montanaBtn
             // 
@@ -210,6 +214,7 @@
             this.montanaBtn.TabIndex = 16;
             this.montanaBtn.Text = "Montana";
             this.montanaBtn.UseVisualStyleBackColor = true;
+            this.montanaBtn.Click += new System.EventHandler(this.montanaBtn_Click);
             // 
             // wyomingBtn
             // 
@@ -219,24 +224,27 @@
             this.wyomingBtn.TabIndex = 17;
             this.wyomingBtn.Text = "Wyoming";
             this.wyomingBtn.UseVisualStyleBackColor = true;
+            this.wyomingBtn.Click += new System.EventHandler(this.wyomingBtn_Click);
             // 
             // northDakotaBtn
             // 
-            this.northDakotaBtn.Location = new System.Drawing.Point(682, 147);
+            this.northDakotaBtn.Location = new System.Drawing.Point(692, 147);
             this.northDakotaBtn.Name = "northDakotaBtn";
-            this.northDakotaBtn.Size = new System.Drawing.Size(68, 44);
+            this.northDakotaBtn.Size = new System.Drawing.Size(51, 44);
             this.northDakotaBtn.TabIndex = 18;
             this.northDakotaBtn.Text = "North Dakota";
             this.northDakotaBtn.UseVisualStyleBackColor = true;
+            this.northDakotaBtn.Click += new System.EventHandler(this.northDakotaBtn_Click);
             // 
             // southDakotaBtn
             // 
-            this.southDakotaBtn.Location = new System.Drawing.Point(682, 267);
+            this.southDakotaBtn.Location = new System.Drawing.Point(693, 264);
             this.southDakotaBtn.Name = "southDakotaBtn";
-            this.southDakotaBtn.Size = new System.Drawing.Size(68, 43);
+            this.southDakotaBtn.Size = new System.Drawing.Size(50, 43);
             this.southDakotaBtn.TabIndex = 19;
             this.southDakotaBtn.Text = "South Dakota";
             this.southDakotaBtn.UseVisualStyleBackColor = true;
+            this.southDakotaBtn.Click += new System.EventHandler(this.southDakotaBtn_Click);
             // 
             // nebraskaBtn
             // 
@@ -246,6 +254,7 @@
             this.nebraskaBtn.TabIndex = 20;
             this.nebraskaBtn.Text = "Nebraska";
             this.nebraskaBtn.UseVisualStyleBackColor = true;
+            this.nebraskaBtn.Click += new System.EventHandler(this.nebraskaBtn_Click);
             // 
             // coloradoBtn
             // 
@@ -255,15 +264,17 @@
             this.coloradoBtn.TabIndex = 21;
             this.coloradoBtn.Text = "Colorado";
             this.coloradoBtn.UseVisualStyleBackColor = true;
+            this.coloradoBtn.Click += new System.EventHandler(this.coloradoBtn_Click);
             // 
             // newMexicoBtn
             // 
-            this.newMexicoBtn.Location = new System.Drawing.Point(487, 627);
+            this.newMexicoBtn.Location = new System.Drawing.Point(496, 627);
             this.newMexicoBtn.Name = "newMexicoBtn";
-            this.newMexicoBtn.Size = new System.Drawing.Size(68, 37);
+            this.newMexicoBtn.Size = new System.Drawing.Size(59, 37);
             this.newMexicoBtn.TabIndex = 22;
             this.newMexicoBtn.Text = "New Mexico";
             this.newMexicoBtn.UseVisualStyleBackColor = true;
+            this.newMexicoBtn.Click += new System.EventHandler(this.newMexicoBtn_Click);
             // 
             // washingtonBtn
             // 
@@ -273,6 +284,7 @@
             this.washingtonBtn.TabIndex = 23;
             this.washingtonBtn.Text = "Washington";
             this.washingtonBtn.UseVisualStyleBackColor = true;
+            this.washingtonBtn.Click += new System.EventHandler(this.washingtonBtn_Click);
             // 
             // oregonBtn
             // 
@@ -282,6 +294,7 @@
             this.oregonBtn.TabIndex = 24;
             this.oregonBtn.Text = "Oregon";
             this.oregonBtn.UseVisualStyleBackColor = true;
+            this.oregonBtn.Click += new System.EventHandler(this.oregonBtn_Click);
             // 
             // californiaBtn
             // 
@@ -291,6 +304,7 @@
             this.californiaBtn.TabIndex = 25;
             this.californiaBtn.Text = "California";
             this.californiaBtn.UseVisualStyleBackColor = true;
+            this.californiaBtn.Click += new System.EventHandler(this.californiaBtn_Click);
             // 
             // nevadaBtn
             // 
@@ -300,6 +314,7 @@
             this.nevadaBtn.TabIndex = 26;
             this.nevadaBtn.Text = "Nevada";
             this.nevadaBtn.UseVisualStyleBackColor = true;
+            this.nevadaBtn.Click += new System.EventHandler(this.nevadaBtn_Click);
             // 
             // utahBtn
             // 
@@ -309,15 +324,17 @@
             this.utahBtn.TabIndex = 27;
             this.utahBtn.Text = "Utah";
             this.utahBtn.UseVisualStyleBackColor = true;
+            this.utahBtn.Click += new System.EventHandler(this.utahBtn_Click);
             // 
             // arizonaBtn
             // 
-            this.arizonaBtn.Location = new System.Drawing.Point(320, 613);
+            this.arizonaBtn.Location = new System.Drawing.Point(320, 627);
             this.arizonaBtn.Name = "arizonaBtn";
             this.arizonaBtn.Size = new System.Drawing.Size(68, 23);
             this.arizonaBtn.TabIndex = 28;
             this.arizonaBtn.Text = "Arizona";
             this.arizonaBtn.UseVisualStyleBackColor = true;
+            this.arizonaBtn.Click += new System.EventHandler(this.arizonaBtn_Click);
             // 
             // kentuckyBtn
             // 
@@ -391,9 +408,9 @@
             // 
             // westVirginaBtn
             // 
-            this.westVirginaBtn.Location = new System.Drawing.Point(1230, 445);
+            this.westVirginaBtn.Location = new System.Drawing.Point(1243, 454);
             this.westVirginaBtn.Name = "westVirginaBtn";
-            this.westVirginaBtn.Size = new System.Drawing.Size(68, 42);
+            this.westVirginaBtn.Size = new System.Drawing.Size(50, 42);
             this.westVirginaBtn.TabIndex = 36;
             this.westVirginaBtn.Text = "West Virginia";
             this.westVirginaBtn.UseVisualStyleBackColor = true;
@@ -401,9 +418,9 @@
             // 
             // maineBtn
             // 
-            this.maineBtn.Location = new System.Drawing.Point(1497, 130);
+            this.maineBtn.Location = new System.Drawing.Point(1506, 127);
             this.maineBtn.Name = "maineBtn";
-            this.maineBtn.Size = new System.Drawing.Size(68, 23);
+            this.maineBtn.Size = new System.Drawing.Size(49, 23);
             this.maineBtn.TabIndex = 37;
             this.maineBtn.Text = "Maine";
             this.maineBtn.UseVisualStyleBackColor = true;
@@ -411,7 +428,7 @@
             // 
             // newYorkBtn
             // 
-            this.newYorkBtn.Location = new System.Drawing.Point(1361, 254);
+            this.newYorkBtn.Location = new System.Drawing.Point(1368, 264);
             this.newYorkBtn.Name = "newYorkBtn";
             this.newYorkBtn.Size = new System.Drawing.Size(68, 23);
             this.newYorkBtn.TabIndex = 38;
@@ -512,12 +529,13 @@
             // 
             // hawaiiBtn
             // 
-            this.hawaiiBtn.Location = new System.Drawing.Point(474, 930);
+            this.hawaiiBtn.Location = new System.Drawing.Point(487, 927);
             this.hawaiiBtn.Name = "hawaiiBtn";
-            this.hawaiiBtn.Size = new System.Drawing.Size(68, 23);
+            this.hawaiiBtn.Size = new System.Drawing.Size(48, 23);
             this.hawaiiBtn.TabIndex = 48;
             this.hawaiiBtn.Text = "Hawaii";
             this.hawaiiBtn.UseVisualStyleBackColor = true;
+            this.hawaiiBtn.Click += new System.EventHandler(this.hawaiiBtn_Click);
             // 
             // alaskaBtn
             // 
@@ -527,6 +545,7 @@
             this.alaskaBtn.TabIndex = 49;
             this.alaskaBtn.Text = "Alaska";
             this.alaskaBtn.UseVisualStyleBackColor = true;
+            this.alaskaBtn.Click += new System.EventHandler(this.alaskaBtn_Click);
             // 
             // louisianaBtn
             // 
@@ -562,7 +581,7 @@
             // 
             this.alabamaBtn.Location = new System.Drawing.Point(1090, 687);
             this.alabamaBtn.Name = "alabamaBtn";
-            this.alabamaBtn.Size = new System.Drawing.Size(65, 23);
+            this.alabamaBtn.Size = new System.Drawing.Size(63, 23);
             this.alabamaBtn.TabIndex = 7;
             this.alabamaBtn.Text = "Alabama";
             this.alabamaBtn.UseVisualStyleBackColor = true;
@@ -576,6 +595,7 @@
             this.pictureBox1.Size = new System.Drawing.Size(1617, 1044);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // MapWindow
             // 
