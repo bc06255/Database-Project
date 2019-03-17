@@ -52,6 +52,18 @@
     <Compile Include="AirportSearch.Designer.cs">
       <DependentUpon>AirportSearch.cs</DependentUpon>
     </Compile>
+    <Compile Include="AirportsWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AirportsWindow.Designer.cs">
+      <DependentUpon>AirportsWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeesWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeesWindow.Designer.cs">
+      <DependentUpon>EmployeesWindow.cs</DependentUpon>
+    </Compile>
     <Compile Include="userSelectWindow.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +78,22 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="US_AirportsDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>US_AirportsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="US_AirportsDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>US_AirportsDataSet1.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AirportsWindow.resx">
+      <DependentUpon>AirportsWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeesWindow.resx">
+      <DependentUpon>EmployeesWindow.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="userSelectWindow.resx">
       <DependentUpon>userSelectWindow.cs</DependentUpon>
     </EmbeddedResource>
@@ -91,6 +119,28 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="US_AirportsDataSet.xsc">
+      <DependentUpon>US_AirportsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="US_AirportsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>US_AirportsDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="US_AirportsDataSet.xss">
+      <DependentUpon>US_AirportsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="US_AirportsDataSet1.xsc">
+      <DependentUpon>US_AirportsDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="US_AirportsDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>US_AirportsDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="US_AirportsDataSet1.xss">
+      <DependentUpon>US_AirportsDataSet1.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

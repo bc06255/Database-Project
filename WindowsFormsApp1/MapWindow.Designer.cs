@@ -80,6 +80,10 @@
             this.minnesotaBtn = new System.Windows.Forms.Button();
             this.arkansasBtn = new System.Windows.Forms.Button();
             this.alabamaBtn = new System.Windows.Forms.Button();
+            this.manageFlightsBtn = new System.Windows.Forms.Button();
+            this.manageEmployeesBtn = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -637,10 +641,54 @@
             this.alabamaBtn.UseVisualStyleBackColor = true;
             this.alabamaBtn.Click += new System.EventHandler(this.alabamaBtn_Click);
             // 
+            // manageFlightsBtn
+            // 
+            this.manageFlightsBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.manageFlightsBtn.Location = new System.Drawing.Point(651, 868);
+            this.manageFlightsBtn.Name = "manageFlightsBtn";
+            this.manageFlightsBtn.Size = new System.Drawing.Size(316, 81);
+            this.manageFlightsBtn.TabIndex = 51;
+            this.manageFlightsBtn.Text = "Manage Flights";
+            this.manageFlightsBtn.UseVisualStyleBackColor = true;
+            this.manageFlightsBtn.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // manageEmployeesBtn
+            // 
+            this.manageEmployeesBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.manageEmployeesBtn.Location = new System.Drawing.Point(327, 868);
+            this.manageEmployeesBtn.Name = "manageEmployeesBtn";
+            this.manageEmployeesBtn.Size = new System.Drawing.Size(316, 81);
+            this.manageEmployeesBtn.TabIndex = 52;
+            this.manageEmployeesBtn.Text = "Manage Employees";
+            this.manageEmployeesBtn.UseVisualStyleBackColor = true;
+            this.manageEmployeesBtn.Click += new System.EventHandler(this.manageEmployeesBtn_Click);
+            // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(973, 868);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(316, 81);
+            this.button3.TabIndex = 53;
+            this.button3.Text = "Manage Flight Crew";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button4
+            // 
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Location = new System.Drawing.Point(5, 868);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(316, 81);
+            this.button4.TabIndex = 54;
+            this.button4.Text = "Manage Airports";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::WindowsFormsApp1.Properties.Resources.united_states_map1;
-            this.pictureBox1.Location = new System.Drawing.Point(5, 5);
+            this.pictureBox1.Location = new System.Drawing.Point(5, 6);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1284, 856);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -652,7 +700,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1293, 961);
+            this.ClientSize = new System.Drawing.Size(1293, 954);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.manageEmployeesBtn);
+            this.Controls.Add(this.manageFlightsBtn);
             this.Controls.Add(this.alabamaBtn);
             this.Controls.Add(this.minnesotaBtn);
             this.Controls.Add(this.alaskaBtn);
@@ -706,6 +758,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "MapWindow";
             this.Text = "MapWindow";
+            this.Load += new System.EventHandler(this.MapWindow_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -766,5 +819,9 @@
         private System.Windows.Forms.Button hawaiiBtn;
         private System.Windows.Forms.Button alaskaBtn;
         private System.Windows.Forms.Button minnesotaBtn;
+        private System.Windows.Forms.Button manageFlightsBtn;
+        private System.Windows.Forms.Button manageEmployeesBtn;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
     }
 }

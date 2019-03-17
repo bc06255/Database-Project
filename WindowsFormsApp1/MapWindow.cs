@@ -14,6 +14,8 @@ namespace WindowsFormsApp1
     public partial class MapWindow : Form
     {
         userSelectWindow window = new userSelectWindow();
+        EmployeesWindow employeesWindow = new EmployeesWindow();
+        AirportsWindow airportsWindow = new AirportsWindow();
         public int statenum = 50;
         public MapWindow()
         {
@@ -27,6 +29,8 @@ namespace WindowsFormsApp1
             totalPassengers = new String[50];
             stateText = new String[50];
             int[] num = new int[50];
+
+            if (airportsWindow.Hide)
                         
             for (int i = 0; i < 50; i++)
             {
@@ -36,7 +40,7 @@ namespace WindowsFormsApp1
             using (SqlConnection connection = new SqlConnection("Data Source=DESKTOP-PG47RQQ;Initial Catalog=US_Airports;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False;"))
             {
                 connection.Open();
-                using (cmd = new SqlCommand("SELECT AirportState, COUNT(*) AS Airports, SUM(PassengersPerYear) AS TotalPassengers FROM Airport GROUP BY AirportState " , connection))
+                using (cmd = new SqlCommand("SELECT AirportState, COUNT(*) AS Airports, SUM(PassengersPerYear) AS TotalPassengers FROM Airport GROUP BY AirportState ", connection))
                 {
                     reader = cmd.ExecuteReader();
                     var totlpssngrs = reader.GetOrdinal("TotalPassengers");
@@ -44,17 +48,17 @@ namespace WindowsFormsApp1
                     while (reader.Read())
                     {
                         numAirports[i] = String.Format("{0}", reader["Airports"]);
-                        totalPassengers[i] = String.Format("{0}", reader["TotalPassengers"]); 
+                        totalPassengers[i] = String.Format("{0}", reader["TotalPassengers"]);
                         num[i] = int.Parse(totalPassengers[i], System.Globalization.NumberStyles.AllowThousands);
                         totalPassengers[i] = Convert.ToDecimal(num[i]).ToString("#,##0");
                         i++;
                     }
 
-                    for(i=0; i<50; i++)
+                    for (i = 0; i < 50; i++)
                     {
                         stateText[i] += numAirports[i] + "\n";
                     }
-                    stateText[7] = "Airports:\t\t0\n";  
+                    stateText[7] = "Airports:\t\t0\n";
                     reader.Close();
                 }
                 using (cmd = new SqlCommand("SELECT a.AirportState, a.AirportName, a.PassengersPerYear FROM(SELECT AirportState, MAX(PassengersPerYear) AS MostPopular " +
@@ -70,7 +74,7 @@ namespace WindowsFormsApp1
                         i++;
                     }
 
-                  
+
 
                     for (i = 0; i < 50; i++)
                     {
@@ -80,7 +84,7 @@ namespace WindowsFormsApp1
                     reader.Close();
 
                 }
-               
+
 
             }
 
@@ -94,6 +98,7 @@ namespace WindowsFormsApp1
             }
             
         }
+        
 
         private void alaskaBtn_Click(object sender, EventArgs e)
         {
@@ -399,80 +404,39 @@ namespace WindowsFormsApp1
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             window.Show();
         }
 
-        
+        private void button1_Click(object sender, EventArgs e)
+        {
 
-        
+        }
 
-        
+    
 
-        
+        private void button3_Click(object sender, EventArgs e)
+        {
 
-        
+        }
 
-        
+        private void manageEmployeesBtn_Click(object sender, EventArgs e)
+        {            
+            employeesWindow.Show();
+            this.Hide();
+        }
 
-        
+        private void button4_Click(object sender, EventArgs e)
+        {
+            airportsWindow.Show();
+            this.Hide();
+        }
 
-        
+        private void MapWindow_Load(object sender, EventArgs e)
+        {
 
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
+        }
     }
 
 }
