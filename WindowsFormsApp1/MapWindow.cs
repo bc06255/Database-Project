@@ -30,7 +30,6 @@ namespace WindowsFormsApp1
             stateText = new String[50];
             int[] num = new int[50];
 
-            if (airportsWindow.Hide)
                         
             for (int i = 0; i < 50; i++)
             {
