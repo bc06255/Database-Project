@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Threading;
 
 namespace WindowsFormsApp1
 {
@@ -17,9 +18,15 @@ namespace WindowsFormsApp1
         EmployeesWindow employeesWindow = new EmployeesWindow();
         AirportsWindow airportsWindow = new AirportsWindow();
         public int statenum = 50;
+
+
+
+
         public MapWindow()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
+            
             SqlDataReader reader;
             SqlCommand cmd;
 
@@ -35,6 +42,8 @@ namespace WindowsFormsApp1
             {
                 stateText[i] = "Airports:\t\t";
             }
+
+            
 
             using (SqlConnection connection = new SqlConnection("Data Source=DESKTOP-PG47RQQ;Initial Catalog=US_Airports;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False;"))
             {
@@ -417,7 +426,17 @@ namespace WindowsFormsApp1
 
         private void button3_Click(object sender, EventArgs e)
         {
+            AirlinesWindow window = new AirlinesWindow();
 
+            if (Application.OpenForms.OfType<AirlinesWindow>().Count() == 1)
+            {
+                Application.OpenForms.OfType<AirlinesWindow>().First().Show();
+            }
+            else
+            {
+                window.Show();
+            }
+            this.Hide();
         }
 
         private void manageEmployeesBtn_Click(object sender, EventArgs e)
@@ -428,14 +447,37 @@ namespace WindowsFormsApp1
 
         private void button4_Click(object sender, EventArgs e)
         {
-            airportsWindow.Show();
-            this.Hide();
+            if (Application.OpenForms.OfType<AirportsWindow>().Count() == 1)
+            {
+                Application.OpenForms.OfType<AirportsWindow>().First().Show();
+            }
+            else
+            {
+                airportsWindow.Show();
+            }    
+            this.Hide();  
         }
 
         private void MapWindow_Load(object sender, EventArgs e)
         {
 
         }
+
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            if (Application.OpenForms.OfType<MapWindow>().Count() == 1)
+            {
+                Application.OpenForms.OfType<MapWindow>().First().Show();
+                this.Hide();
+            }
+            else if (Application.OpenForms.OfType<MapWindow>().Count() > 1)
+            {
+                Application.OpenForms.OfType<MapWindow>().First().Close();
+            }
+
+
+        }
+
     }
 
 }

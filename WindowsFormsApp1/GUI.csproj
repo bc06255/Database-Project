@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AirlinesWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AirlinesWindow.Designer.cs">
+      <DependentUpon>AirlinesWindow.cs</DependentUpon>
+    </Compile>
     <Compile Include="AirportSearch.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,6 +94,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>US_AirportsDataSet1.xsd</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AirlinesWindow.resx">
+      <DependentUpon>AirlinesWindow.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AirportsWindow.resx">
       <DependentUpon>AirportsWindow.cs</DependentUpon>
     </EmbeddedResource>

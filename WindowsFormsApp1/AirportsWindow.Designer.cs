@@ -28,20 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.airportIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.airportNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.airportCityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.airportStateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.airportAddressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.passengersPerYearDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.airportBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.uS_AirportsDataSet1 = new WindowsFormsApp1.US_AirportsDataSet1();
-            this.uS_AirportsDataSet = new WindowsFormsApp1.US_AirportsDataSet();
-            this.uSAirportsDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.uSAirportsDataSetBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.airportTableAdapter = new WindowsFormsApp1.US_AirportsDataSet1TableAdapters.AirportTableAdapter();
+            this.airportsGridView = new System.Windows.Forms.DataGridView();
             this.airportIDBox = new System.Windows.Forms.TextBox();
             this.airportNameBox = new System.Windows.Forms.TextBox();
             this.airportCityBox = new System.Windows.Forms.TextBox();
@@ -55,97 +42,18 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.backBtn = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.airportBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.uS_AirportsDataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.uS_AirportsDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.uSAirportsDataSetBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.uSAirportsDataSetBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.airportsGridView)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // airportsGridView
             // 
-            this.dataGridView1.AllowUserToOrderColumns = true;
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.airportIDDataGridViewTextBoxColumn,
-            this.airportNameDataGridViewTextBoxColumn,
-            this.airportCityDataGridViewTextBoxColumn,
-            this.airportStateDataGridViewTextBoxColumn,
-            this.airportAddressDataGridViewTextBoxColumn,
-            this.passengersPerYearDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.airportBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(302, 12);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(567, 426);
-            this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // airportIDDataGridViewTextBoxColumn
-            // 
-            this.airportIDDataGridViewTextBoxColumn.DataPropertyName = "AirportID";
-            this.airportIDDataGridViewTextBoxColumn.HeaderText = "AirportID";
-            this.airportIDDataGridViewTextBoxColumn.Name = "airportIDDataGridViewTextBoxColumn";
-            // 
-            // airportNameDataGridViewTextBoxColumn
-            // 
-            this.airportNameDataGridViewTextBoxColumn.DataPropertyName = "AirportName";
-            this.airportNameDataGridViewTextBoxColumn.HeaderText = "AirportName";
-            this.airportNameDataGridViewTextBoxColumn.Name = "airportNameDataGridViewTextBoxColumn";
-            // 
-            // airportCityDataGridViewTextBoxColumn
-            // 
-            this.airportCityDataGridViewTextBoxColumn.DataPropertyName = "AirportCity";
-            this.airportCityDataGridViewTextBoxColumn.HeaderText = "AirportCity";
-            this.airportCityDataGridViewTextBoxColumn.Name = "airportCityDataGridViewTextBoxColumn";
-            // 
-            // airportStateDataGridViewTextBoxColumn
-            // 
-            this.airportStateDataGridViewTextBoxColumn.DataPropertyName = "AirportState";
-            this.airportStateDataGridViewTextBoxColumn.HeaderText = "AirportState";
-            this.airportStateDataGridViewTextBoxColumn.Name = "airportStateDataGridViewTextBoxColumn";
-            // 
-            // airportAddressDataGridViewTextBoxColumn
-            // 
-            this.airportAddressDataGridViewTextBoxColumn.DataPropertyName = "AirportAddress";
-            this.airportAddressDataGridViewTextBoxColumn.HeaderText = "AirportAddress";
-            this.airportAddressDataGridViewTextBoxColumn.Name = "airportAddressDataGridViewTextBoxColumn";
-            // 
-            // passengersPerYearDataGridViewTextBoxColumn
-            // 
-            this.passengersPerYearDataGridViewTextBoxColumn.DataPropertyName = "PassengersPerYear";
-            this.passengersPerYearDataGridViewTextBoxColumn.HeaderText = "PassengersPerYear";
-            this.passengersPerYearDataGridViewTextBoxColumn.Name = "passengersPerYearDataGridViewTextBoxColumn";
-            // 
-            // airportBindingSource
-            // 
-            this.airportBindingSource.DataMember = "Airport";
-            this.airportBindingSource.DataSource = this.uS_AirportsDataSet1;
-            // 
-            // uS_AirportsDataSet1
-            // 
-            this.uS_AirportsDataSet1.DataSetName = "US_AirportsDataSet1";
-            this.uS_AirportsDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // uS_AirportsDataSet
-            // 
-            this.uS_AirportsDataSet.DataSetName = "US_AirportsDataSet";
-            this.uS_AirportsDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // uSAirportsDataSetBindingSource
-            // 
-            this.uSAirportsDataSetBindingSource.DataSource = this.uS_AirportsDataSet;
-            this.uSAirportsDataSetBindingSource.Position = 0;
-            // 
-            // uSAirportsDataSetBindingSource1
-            // 
-            this.uSAirportsDataSetBindingSource1.DataSource = this.uS_AirportsDataSet;
-            this.uSAirportsDataSetBindingSource1.Position = 0;
-            // 
-            // airportTableAdapter
-            // 
-            this.airportTableAdapter.ClearBeforeFill = true;
+            this.airportsGridView.AllowUserToOrderColumns = true;
+            this.airportsGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.airportsGridView.Location = new System.Drawing.Point(302, 12);
+            this.airportsGridView.Name = "airportsGridView";
+            this.airportsGridView.Size = new System.Drawing.Size(567, 426);
+            this.airportsGridView.TabIndex = 0;
+            this.airportsGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // airportIDBox
             // 
@@ -288,16 +196,11 @@
             this.Controls.Add(this.airportCityBox);
             this.Controls.Add(this.airportNameBox);
             this.Controls.Add(this.airportIDBox);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.airportsGridView);
             this.Name = "AirportsWindow";
             this.Text = "AirportsWindow";
             this.Load += new System.EventHandler(this.AirportsWindow_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.airportBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.uS_AirportsDataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.uS_AirportsDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.uSAirportsDataSetBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.uSAirportsDataSetBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.airportsGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -305,19 +208,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.BindingSource uSAirportsDataSetBindingSource1;
-        private US_AirportsDataSet uS_AirportsDataSet;
-        private System.Windows.Forms.BindingSource uSAirportsDataSetBindingSource;
-        private US_AirportsDataSet1 uS_AirportsDataSet1;
-        private System.Windows.Forms.BindingSource airportBindingSource;
-        private US_AirportsDataSet1TableAdapters.AirportTableAdapter airportTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn airportIDDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn airportNameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn airportCityDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn airportStateDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn airportAddressDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn passengersPerYearDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridView airportsGridView;
         private System.Windows.Forms.TextBox airportIDBox;
         private System.Windows.Forms.TextBox airportNameBox;
         private System.Windows.Forms.TextBox airportCityBox;

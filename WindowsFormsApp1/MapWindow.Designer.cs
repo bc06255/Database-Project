@@ -82,7 +82,7 @@
             this.alabamaBtn = new System.Windows.Forms.Button();
             this.manageFlightsBtn = new System.Windows.Forms.Button();
             this.manageEmployeesBtn = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.manageAirlinesBtn = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -644,7 +644,7 @@
             // manageFlightsBtn
             // 
             this.manageFlightsBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.manageFlightsBtn.Location = new System.Drawing.Point(651, 868);
+            this.manageFlightsBtn.Location = new System.Drawing.Point(649, 868);
             this.manageFlightsBtn.Name = "manageFlightsBtn";
             this.manageFlightsBtn.Size = new System.Drawing.Size(316, 81);
             this.manageFlightsBtn.TabIndex = 51;
@@ -655,7 +655,7 @@
             // manageEmployeesBtn
             // 
             this.manageEmployeesBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.manageEmployeesBtn.Location = new System.Drawing.Point(327, 868);
+            this.manageEmployeesBtn.Location = new System.Drawing.Point(971, 868);
             this.manageEmployeesBtn.Name = "manageEmployeesBtn";
             this.manageEmployeesBtn.Size = new System.Drawing.Size(316, 81);
             this.manageEmployeesBtn.TabIndex = 52;
@@ -663,16 +663,16 @@
             this.manageEmployeesBtn.UseVisualStyleBackColor = true;
             this.manageEmployeesBtn.Click += new System.EventHandler(this.manageEmployeesBtn_Click);
             // 
-            // button3
+            // manageAirlinesBtn
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(973, 868);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(316, 81);
-            this.button3.TabIndex = 53;
-            this.button3.Text = "Manage Flight Crew";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.manageAirlinesBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.manageAirlinesBtn.Location = new System.Drawing.Point(327, 868);
+            this.manageAirlinesBtn.Name = "manageAirlinesBtn";
+            this.manageAirlinesBtn.Size = new System.Drawing.Size(316, 81);
+            this.manageAirlinesBtn.TabIndex = 53;
+            this.manageAirlinesBtn.Text = "Manage Airlines";
+            this.manageAirlinesBtn.UseVisualStyleBackColor = true;
+            this.manageAirlinesBtn.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -702,7 +702,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1293, 954);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.manageAirlinesBtn);
             this.Controls.Add(this.manageEmployeesBtn);
             this.Controls.Add(this.manageFlightsBtn);
             this.Controls.Add(this.alabamaBtn);
@@ -821,7 +821,7 @@
         private System.Windows.Forms.Button minnesotaBtn;
         private System.Windows.Forms.Button manageFlightsBtn;
         private System.Windows.Forms.Button manageEmployeesBtn;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button manageAirlinesBtn;
         private System.Windows.Forms.Button button4;
     }
 }
