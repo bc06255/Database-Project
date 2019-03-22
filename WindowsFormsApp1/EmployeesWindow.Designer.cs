@@ -51,11 +51,8 @@
             this.jobTitleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.employeeBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.uS_AirportsDataSet = new WindowsFormsApp1.US_AirportsDataSet();
-            this.employeeTableAdapter = new WindowsFormsApp1.US_AirportsDataSetTableAdapters.EmployeeTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.employeeGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.uS_AirportsDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -240,20 +237,6 @@
             this.emailDataGridViewTextBoxColumn.HeaderText = "Email";
             this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
             // 
-            // employeeBindingSource
-            // 
-            this.employeeBindingSource.DataMember = "Employee";
-            this.employeeBindingSource.DataSource = this.uS_AirportsDataSet;
-            // 
-            // uS_AirportsDataSet
-            // 
-            this.uS_AirportsDataSet.DataSetName = "US_AirportsDataSet";
-            this.uS_AirportsDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // employeeTableAdapter
-            // 
-            this.employeeTableAdapter.ClearBeforeFill = true;
-            // 
             // EmployeesWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -279,7 +262,6 @@
             this.Load += new System.EventHandler(this.EmployeesWindow_Load);
             ((System.ComponentModel.ISupportInitialize)(this.employeeGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.uS_AirportsDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -302,9 +284,7 @@
         private System.Windows.Forms.TextBox airportIDBox;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.DataGridView employeeGridView;
-        private US_AirportsDataSet uS_AirportsDataSet;
         private System.Windows.Forms.BindingSource employeeBindingSource;
-        private US_AirportsDataSetTableAdapters.EmployeeTableAdapter employeeTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn employeeIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn airportIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn firstNameDataGridViewTextBoxColumn;

@@ -700,7 +700,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1293, 954);
+            this.ClientSize = new System.Drawing.Size(1293, 1046);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.manageAirlinesBtn);
             this.Controls.Add(this.manageEmployeesBtn);
