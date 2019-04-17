@@ -21,6 +21,7 @@ namespace WindowsFormsApp1
         SqlCommand cmd;
         SqlConnection connection;
         int airportSize = 0;
+        DatabaseConnection dbConnection = new DatabaseConnection();
 
         String[] airports = new string[25];
         public userSelectWindow()
@@ -105,36 +106,35 @@ namespace WindowsFormsApp1
             planeModelBtn.Visible = false;
             int i = 0;
             String temp;
-                using (connection = new SqlConnection("Data Source=DESKTOP-PG47RQQ;Initial Catalog=US_Airports;Integrated Security=True;Connect Timeout=30;" +
-                                                                    "Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False;"))
+            using (connection = new SqlConnection(dbConnection.getConnection()))
+            {
+                connection.Open();
+                using (cmd = new SqlCommand("SELECT COUNT(*) AS NumAirports FROM Airport WHERE StateID = '" + statenum + "'", connection))
                 {
-                    connection.Open();
-                    using (cmd = new SqlCommand("SELECT COUNT(*) AS NumAirports FROM Airport WHERE AirportState = '" + statenum + "'", connection))
-                    {
-                        reader = cmd.ExecuteReader();
-                        reader.Read();
-                        
-                        temp = String.Format("{0}", reader["NumAirports"]);
-                        airportSize = int.Parse(temp);
-                        reader.Close();
-                        airports = new string[airportSize];
-                    }
+                    reader = cmd.ExecuteReader();
+                    reader.Read();
 
-                    using (cmd = new SqlCommand("SELECT * FROM Airport WHERE AirportState = '" + statenum + "'" + " ORDER BY AirportName", connection))
+                    temp = String.Format("{0}", reader["NumAirports"]);
+                    airportSize = int.Parse(temp);
+                    reader.Close();
+                    airports = new string[airportSize];
+                }
+
+                using (cmd = new SqlCommand("SELECT * FROM Airport WHERE StateID = '" + statenum + "'" + " ORDER BY AirportName", connection))
+                {
+                    reader = cmd.ExecuteReader();
+                    while (reader.Read())
                     {
-                        reader = cmd.ExecuteReader();
-                        while (reader.Read())
-                        {
-                            airports[i] = String.Format("{0}", reader["AirportName"]);
-                            i++;
-                        }
-                        for (i = 0; i < airportSize; i++)
-                        {
-                            searchBox.Items.Add(airports[i]);
-                        }
-                        reader.Close();
-                    }            
-                }            
+                        airports[i] = String.Format("{0}", reader["AirportName"]);
+                        i++;
+                    }
+                    for (i = 0; i < airportSize; i++)
+                    {
+                        searchBox.Items.Add(airports[i]);
+                    }
+                    reader.Close();
+                }
+            }            
         }
 
         public void SetState(String num)
@@ -161,8 +161,7 @@ namespace WindowsFormsApp1
             temp = Regex.Replace(temp, "O'H", "O''H");
             int num = 0;
             
-            using (connection = new SqlConnection("Data Source=DESKTOP-PG47RQQ;Initial Catalog=US_Airports;Integrated Security=True;Connect Timeout=30;" +
-                                                                    "Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False;"))
+            using (connection = new SqlConnection(dbConnection.getConnection()))
             {
                 
                 connection.Open();

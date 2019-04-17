@@ -13,9 +13,8 @@ namespace WindowsFormsApp1
 {
     public partial class AirlinesWindow : Form
     {
-        
+        DatabaseConnection dbConnection = new DatabaseConnection();
         DataSet ds = new DataSet();
-        String connectionString = "Data Source=DESKTOP-PG47RQQ;Initial Catalog=US_Airports;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False;";
         String select = "SELECT AirlineID, AirlineName, Plane.PlaneID, ModelCompany, Model, PlanesInService " +
                         "FROM Plane LEFT JOIN Airline " +
                         "ON Plane.PlaneID = Airline.PlaneID " +
@@ -36,7 +35,7 @@ namespace WindowsFormsApp1
 
         private void AirlinesWindow_Load(object sender, EventArgs e)
         {
-            SqlConnection connection = new SqlConnection(connectionString);
+            SqlConnection connection = new SqlConnection(dbConnection.getConnection());
             SqlDataAdapter dataadapter = new SqlDataAdapter(select, connection);
             
             connection.Open();
@@ -61,7 +60,7 @@ namespace WindowsFormsApp1
 
         private void addAirlineBtn_Click(object sender, EventArgs e)
         {
-            SqlConnection connection = new SqlConnection(connectionString);
+            SqlConnection connection = new SqlConnection(dbConnection.getConnection());
             connection.Open();
             String insert = "INSERT INTO Airline(AirlineID, AirlineName, PlaneID, PlanesInService) VALUES(@AirlineID, @AirlineName, @PlaneID, @PlanesInService)";
             SqlCommand command = new SqlCommand(insert, connection);

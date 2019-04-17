@@ -14,6 +14,7 @@ namespace WindowsFormsApp1
 {
     public partial class MapWindow : Form
     {
+        DatabaseConnection dbConnection = new DatabaseConnection();
         userSelectWindow window = new userSelectWindow();
         EmployeesWindow employeesWindow = new EmployeesWindow();
         AirportsWindow airportsWindow = new AirportsWindow();
@@ -45,10 +46,10 @@ namespace WindowsFormsApp1
 
             
 
-            using (SqlConnection connection = new SqlConnection("Data Source=DESKTOP-PG47RQQ;Initial Catalog=US_Airports;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False;"))
+            using (SqlConnection connection = new SqlConnection(dbConnection.getConnection()))
             {
                 connection.Open();
-                using (cmd = new SqlCommand("SELECT AirportState, COUNT(*) AS Airports, SUM(PassengersPerYear) AS TotalPassengers FROM Airport GROUP BY AirportState ", connection))
+                using (cmd = new SqlCommand("SELECT StateID, COUNT(*) AS Airports, SUM(PassengersPerYear) AS TotalPassengers FROM Airport GROUP BY StateID ", connection))
                 {
                     reader = cmd.ExecuteReader();
                     var totlpssngrs = reader.GetOrdinal("TotalPassengers");
@@ -69,9 +70,9 @@ namespace WindowsFormsApp1
                     stateText[7] = "Airports:\t\t0\n";
                     reader.Close();
                 }
-                using (cmd = new SqlCommand("SELECT a.AirportState, a.AirportName, a.PassengersPerYear FROM(SELECT AirportState, MAX(PassengersPerYear) AS MostPopular " +
-                                            "FROM Airport GROUP BY AirportState) AS b INNER JOIN Airport AS a ON a.AirportState = b.AirportState " +
-                                            "AND a.PassengersPerYear = b.MostPopular ORDER BY AirportState", connection))
+                using (cmd = new SqlCommand("SELECT a.StateID, a.AirportName, a.PassengersPerYear FROM(SELECT StateID, MAX(PassengersPerYear) AS MostPopular " +
+                                            "FROM Airport GROUP BY StateID) AS b INNER JOIN Airport AS a ON a.StateID = b.StateID " +
+                                            "AND a.PassengersPerYear = b.MostPopular ORDER BY StateID", connection))
                 {
                     reader = cmd.ExecuteReader();
                     int i = 0;

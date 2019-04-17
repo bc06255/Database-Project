@@ -64,6 +64,7 @@
     <Compile Include="AirportsWindow.Designer.cs">
       <DependentUpon>AirportsWindow.cs</DependentUpon>
     </Compile>
+    <Compile Include="DatabaseConnection.cs" />
     <Compile Include="EmployeesWindow.cs">
       <SubType>Form</SubType>
     </Compile>

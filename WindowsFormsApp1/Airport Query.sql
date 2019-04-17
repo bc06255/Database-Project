@@ -1,18 +1,59 @@
-USE US_Airports;
+USE Airport;
 
-DROP TABLE Plane
-DROP TABLE Airport
-DROP TABLE Airline
-DROP TABLE Employee
+INSERT INTO [State]
+VALUES 
+('AZ', 'Arizona'),
+('AR', 'Arkansas'),
+('CA', 'California'),
+('CO', 'Colorado'),
+('CT', 'Connecticut'),
+('DE', 'Delaware'),
+('FL', 'Florida'),
+('GA', 'Georgia'),
+('HI', 'Hawaii'),
+('ID', 'Idaho'),
+('IL', 'Illinois'),
+('IN', 'Indiana'),
+('IA', 'Iowa'),
+('KS', 'Kansas'),
+('KY', 'Kentucky'),
+('LA', 'Louisiana'),
+('ME', 'Maine'),
+('MD', 'Maryland'),
+('MA', 'Massachusetts'),
+('MI', 'Michigan'),
+('MN', 'Minnesota'),
+('MS', 'Mississippi'),
+('MO', 'Missouri'),
+('MT', 'Montana'),
+('NE', 'New England'),
+('NV', 'Nevada'),
+('NH', 'New Hampshire'),
+('NJ', 'New Jersey'),
+('NM', 'New Mexico'),
+('NY', 'New York'),
+('NC', 'North Carolina'),
+('ND', 'North Dakota'),
+('OH', 'Ohio'),
+('OK', 'Oklahoma'),
+('OR', 'Oregon'),
+('PA', 'Pennsylvania'),
+('RI', 'Rhode Island'),
+('SC', 'South Carolina'),
+('SD', 'South Dakota'),
+('TN', 'Tennessee'),
+('TX', 'Texas'),
+('UT', 'Utah'),
+('VT', 'Vermont'),
+('VA', 'Virginia'),
+('WA', 'Washington'),
+('WV', 'West Virginia'),
+('WI', 'Wisconsin'),
+('WY', 'Wyoming');
+
 
 GO
-CREATE TABLE Airport (AirportID varchar(3), AirportName varchar(255), AirportCity varchar(255), AirportState varchar(255), PassengersPerYear int)
-CREATE TABLE Plane (PlaneID int, ModelCompany varchar(255), Model varchar(255), MaxPassengerCount int)
-CREATE TABLE Airline(AirlineID int, AirlineName varchar(30), PlaneID int, PlanesInService int)
-CREATE TABLE Employee(EmployeeID varchar(8), AirportID varchar(3), FirstName varchar(20), LastName varchar(20), JobTitle varchar(20), Email varchar(30))
-
-GO
-INSERT INTO Airport (AirportID, AirportName, AirportCity, AirportState, PassengersPerYear)
+INSERT INTO Airport (AirportID, AirportName, AirportCity, StateID, PassengersPerYear)
 VALUES ('ATL', 'Hartsfield-Jackson Atlanta International Airport', 'Atlanta', 'GA', 50251962),
 	('LAX', 'Los Angeles International Airport', 'Los Angeles', 'CA', 41232416),
 	('ORD', '0''Hare International Airport', 'Chicago', 'IL', 38593028),
@@ -127,135 +168,14 @@ VALUES ('ATL', 'Hartsfield-Jackson Atlanta International Airport', 'Atlanta', 'G
 	('BTV', 'Burlington International Airport', 'Burlington', 'VT', 593311),
 	('DCA', 'Ronald Reagan Washington National Airport', 'Washington D.C.', 'VA', 11470854),
 	('CRW', 'Yeager Airport', 'Charleston', 'WV', 213412),
-	('MKE', 'Milwaukee Mitchell International Airport', 'Milwaukee', 'WI', 3327536),
-	('JAC', 'Jackson Hole Airport', 'Jackson', 'WY', 342044);
-	
-
-INSERT INTO Plane (PlaneID, ModelCompany, Model, MaxPassengerCount)
-VALUES (1, 'Airbus', 'A220-100', 109),
-	(2, 'Airbus', 'A220-300', 130),
-	(3, 'Airbus', 'A319-100', 156),
-	(4, 'Airbus', 'A320-200', 177),
-	(5, 'Airbus', 'A320neo', 186),
-	(6, 'Airbus', 'A321-200', 200),
-	(7, 'Airbus', 'A321neo', 240),
-	(8, 'Airbus', 'A330-200', 234),
-	(9, 'Airbus', 'A330-300', 293),
-	(10, 'Boeing', '717-200', 110),
-	(11, 'Boeing', '737-700', 124),
-	(12, 'Boeing', '737-800', 160),
-	(13, 'Boeing', '737-900', 180),
-	(14, 'Boeing', '737-900ER', 180),
-	(15, 'Boeing', '757-200', 176),
-	(16, 'Boeing', '757-300', 234),
-	(17, 'Boeing', '767-300', 209),
-	(18, 'Boeing', '767-300ER', 209),
-	(19, 'Boeing', '767-400ER', 257),
-	(20, 'Boeing', '777-200', 273),
-	(21, 'Boeing', '777-200ER', 291),
-	(22, 'Boeing', '777-200LR', 288),
-	(23, 'Boeing', '777-300ER', 304),
-	(24, 'Boeing', '787-8', 239),
-	(25, 'Boeing', '787-9', 285),
-	(26, 'Embraer', '190', 99),
-	(27, 'McDonnell Douglas', 'MD-82', 140),
-	(28, 'McDonnell Douglas', 'MD-83', 140),
-	(29, 'McDonnell Douglas', 'MD-88', 149),
-	(30, 'McDonnell Douglas', 'MD-90-30', 158),
-	(31, 'Airbus', 'A350-900', 306);
+	('MKE', 'Milwaukee Mitchell International Airport', 'Milwaukee', 'WI', 3327536);
 
 
- 
-	   
 
-INSERT INTO Airline(AirlineID, AirlineName, PlaneID, PlanesInService)
-VALUES (1, 'Alaska Airlines', 3, 10),
-	   (1, 'Alaska Airlines', 4, 53),
-	   (1, 'Alaska Airlines', 7, 8),
-	   (1, 'Alaska Airlines', 11, 11),
-	   (1, 'Alaska Airlines', 12, 61),
-	   (1, 'Alaska Airlines', 13, 12),
-	   (1, 'Alaska Airlines', 14, 78),
-	   (2, 'Allegiant Air', 3, 37),
-	   (2, 'Allegiant Air', 4, 48),
-	   (3, 'American Airlines', 3, 128),
-	   (3, 'American Airlines', 4, 48),
-	   (3, 'American Airlines', 6, 219),
-	   (3, 'American Airlines', 7, 1),
-	   (3, 'American Airlines', 8, 15),
-	   (3, 'American Airlines', 9, 9),
-	   (3, 'American Airlines', 13, 304),
-	   (3, 'American Airlines', 15, 34),
-	   (3, 'American Airlines', 18, 23),
-	   (3, 'American Airlines', 21, 47),
-	   (3, 'American Airlines', 23, 20),
-	   (3, 'American Airlines', 24, 20),
-	   (3, 'American Airlines', 25, 22),
-	   (3, 'American Airlines', 26, 20),
-	   (3, 'American Airlines', 27, 1),
-	   (3, 'American Airlines', 28, 27),
-	   (4, 'Delta Airlines', 1, 8),
-	   (4, 'Delta Airlines', 2, 50),
-	   (4, 'Delta Airlines', 3, 57),
-	   (4, 'Delta Airlines', 4, 62),
-	   (4, 'Delta Airlines', 6, 73),
-	   (4, 'Delta Airlines', 8, 11),
-	   (4, 'Delta Airlines', 9, 31),
-	   (4, 'Delta Airlines', 31, 13),
-	   (4, 'Delta Airlines', 10, 91),
-	   (4, 'Delta Airlines', 11, 10),
-	   (4, 'Delta Airlines', 12, 77),
-	   (4, 'Delta Airlines', 14, 120),
-	   (4, 'Delta Airlines', 15, 111),
-	   (4, 'Delta Airlines', 16, 16),
-	   (4, 'Delta Airlines', 17, 2),
-	   (4, 'Delta Airlines', 18, 56),
-	   (4, 'Delta Airlines', 19, 21),
-	   (4, 'Delta Airlines', 21, 8),
-	   (4, 'Delta Airlines', 22, 10),
-	   (4, 'Delta Airlines', 29, 79),
-	   (4, 'Delta Airlines', 30, 37),
-	   (5, 'Frontier Airlines', 3, 7),
-	   (5, 'Frontier Airlines', 4, 21),
-	   (5, 'Frontier Airlines', 5, 34),
-	   (5, 'Frontier Airlines', 6, 21),
-	   (6, 'Hawaiian Airlines', 7, 12),
-	   (6, 'Hawaiian Airlines', 8, 24),
-	   (6, 'Hawaiian Airlines', 10, 20),
-	   (7, 'JetBlue Airways', 4, 130),
-	   (7, 'JetBlue Airways', 6, 63),
-	   (7, 'JetBlue Airways', 26, 60),
-	   (8, 'Southwest Airlines', 11, 513),
-	   (8, 'Southwest Airlines', 12, 207),
-	   (9, 'Spirit Airlines', 3, 31),
-	   (9, 'Spirit Airlines', 4, 61),
-	   (9, 'Spirit Airlines', 5, 11),
-	   (9, 'Spirit Airlines', 6, 30),
-	   (10, 'Sun Country Airlines', 11, 4),
-	   (10, 'Sun Country Airlines', 12, 26),
-	   (11, 'United Airlines', 3, 71),
-	   (11, 'United Airlines', 4, 99),
-	   (11, 'United Airlines', 11, 40),
-	   (11, 'United Airlines', 12, 141),
-	   (11, 'United Airlines', 14, 148),
-	   (11, 'United Airlines', 15, 55),
-	   (11, 'United Airlines', 16, 21),
-	   (11, 'United Airlines', 18, 38),
-	   (11, 'United Airlines', 19, 16),
-	   (11, 'United Airlines', 20, 19),
-	   (11, 'United Airlines', 21, 55),
-	   (11, 'United Airlines', 23, 18),
-	   (11, 'United Airlines', 24, 12),
-	   (11, 'United Airlines', 25, 25);
 
-INSERT INTO Employee(EmployeeID, AirportID, FirstName, LastName, JobTitle, Email)
-VALUES ('TS16489', 'ATL', 'Timothy', 'Shea', 'Custodian', 'tshea1234@gmail.com'),
-	   ('AF78465', 'ATL', 'Anne-Marie', 'Frey', 'Director', 'afrey8765@gmail.com');
 
-GO
 
-SELECT *
-FROM Plane
+
 
 
 

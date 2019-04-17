@@ -16,7 +16,7 @@ namespace WindowsFormsApp1
     public partial class AirportsWindow : Form
     {
         DataSet ds = new DataSet();
-
+        DatabaseConnection dbConnection = new DatabaseConnection();
         public AirportsWindow()
         {
             InitializeComponent();
@@ -32,9 +32,8 @@ namespace WindowsFormsApp1
 
         private void AirportsWindow_Load(object sender, EventArgs e)
         {
-            String connectionString = "Data Source=DESKTOP-PG47RQQ;Initial Catalog=US_Airports;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False;";
             String sql = "SELECT * FROM Airport";
-            SqlConnection connection = new SqlConnection(connectionString);
+            SqlConnection connection = new SqlConnection(dbConnection.getConnection());
             SqlDataAdapter dataadapter = new SqlDataAdapter(sql, connection);
             connection.Open();
             dataadapter.Fill(ds, "Airport");
