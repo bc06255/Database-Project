@@ -170,12 +170,27 @@ VALUES ('ATL', 'Hartsfield-Jackson Atlanta International Airport', 'Atlanta', 'G
 	('CRW', 'Yeager Airport', 'Charleston', 'WV', 213412),
 	('MKE', 'Milwaukee Mitchell International Airport', 'Milwaukee', 'WI', 3327536);
 
+INSERT INTO Flight (FlightID, AirlineID, DestAirport, FlightDate, PlaneID, AirportID) --MARC (11 airlines, 35 plane models,
+VALUES
+	(1, 1, 'Hector International Sunport', 2019-02-02, 1, 'BNA'),
+	(2, 2, 'Jackson-Evers International Airport', 2019-02-02, 2, 'FSD'),
+	(3, 3, 'Ronald Reagan Washingtotn National Airport', 2019-02-02, 3, 'HNL'),										
+	(4, 4, 'Gainesville Regional Airport', 2019-02-02, 4, 'CRW'),
+	(5, 5, 'Burlington International Airport', 2019-02-02, 5, 'DAB'),
+	(6, 6, 'City of Colorado Springs Municipal Airport', 2019-02-02, 6, 'FAT'),
+	(7, 7, 'Grand Canyon West Airport', 2019-02-02, 7, 'DSM'),
+	(8, 8, 'Indianapolis International Airport', 2019-02-02, 8, 'BET'),
+	(9, 9, 'Des Moines International Airport', 2019-02-02, 9, 'DFW'),									
+	(10, 10, 'Deadhorse Airport', 2019-02-02, 10, 'SAV'),
+	(11, 11, 'Tampa International Airport', 2019-02-02, 11, 'FAI'),
+	(12, 1, 'Augusta Regional Airport', 2019-02-02, 12, 'MKW'),
+	--and so on up to AT MOST 35 flights because we have 35 plane models being tracked, if this is the right format ill finish this up. Just wanna make sure
 
+INSERT INTO FlightLeg (FlightID, AirlineID, DestAirport, AirportID, LegAirport) --MARC
+VALUES
+	(8, 8, 'Indianapolis International Airport', 'BET', 1), --I need more clarification as to what the LegAirport value represents
 
-
-
-
-
-
-
+--INSERT INTO Ticket (AccountNo, TicketID, FlightID, AirlineID, DestAirport) --MARC
+--VALUES
+	
 
