@@ -10,7 +10,7 @@ namespace WindowsFormsApp1
     
     class DatabaseConnection
     {
-        public static String connectionString = "Data Source=airportdbinstance1.cmog5krjfemw.us-east-2.rds.amazonaws.com,1433; Initial Catalog=Airport; User ID=master; Password=masterpassword;";
+        public static String connectionString = "Data Source=airport.cmog5krjfemw.us-east-2.rds.amazonaws.com,1433; Initial Catalog=US_Airports; User ID=admin; Password=password;";
 
         public String getConnection()
         {

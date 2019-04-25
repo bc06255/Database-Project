@@ -97,7 +97,7 @@
             this.georgiaBtn.TabIndex = 1;
             this.georgiaBtn.Text = "GA";
             this.georgiaBtn.UseVisualStyleBackColor = true;
-            this.georgiaBtn.Click += new System.EventHandler(this.georgiaBtn_Click);
+
             // 
             // tennesseeBtn
             // 
@@ -108,7 +108,7 @@
             this.tennesseeBtn.TabIndex = 3;
             this.tennesseeBtn.Text = "TN";
             this.tennesseeBtn.UseVisualStyleBackColor = true;
-            this.tennesseeBtn.Click += new System.EventHandler(this.tennesseeBtn_Click);
+
             // 
             // northCarolinaBtn
             // 
@@ -119,7 +119,7 @@
             this.northCarolinaBtn.TabIndex = 4;
             this.northCarolinaBtn.Text = "NC";
             this.northCarolinaBtn.UseVisualStyleBackColor = true;
-            this.northCarolinaBtn.Click += new System.EventHandler(this.northCarolinaBtn_Click);
+
             // 
             // southCarolinaBtn
             // 
@@ -130,7 +130,7 @@
             this.southCarolinaBtn.TabIndex = 5;
             this.southCarolinaBtn.Text = "SC";
             this.southCarolinaBtn.UseVisualStyleBackColor = true;
-            this.southCarolinaBtn.Click += new System.EventHandler(this.southCarolinaBtn_Click);
+
             // 
             // mississippiBtn
             // 
@@ -141,7 +141,7 @@
             this.mississippiBtn.TabIndex = 6;
             this.mississippiBtn.Text = "MS";
             this.mississippiBtn.UseVisualStyleBackColor = true;
-            this.mississippiBtn.Click += new System.EventHandler(this.mississippiBtn_Click);
+
             // 
             // iowaBtn
             // 
@@ -152,7 +152,7 @@
             this.iowaBtn.TabIndex = 8;
             this.iowaBtn.Text = "IA";
             this.iowaBtn.UseVisualStyleBackColor = true;
-            this.iowaBtn.Click += new System.EventHandler(this.iowaBtn_Click);
+
             // 
             // kansasBtn
             // 
@@ -163,7 +163,7 @@
             this.kansasBtn.TabIndex = 9;
             this.kansasBtn.Text = "KS";
             this.kansasBtn.UseVisualStyleBackColor = true;
-            this.kansasBtn.Click += new System.EventHandler(this.kansasBtn_Click);
+
             // 
             // floridaBtn
             // 
@@ -174,7 +174,7 @@
             this.floridaBtn.TabIndex = 10;
             this.floridaBtn.Text = "FL";
             this.floridaBtn.UseVisualStyleBackColor = true;
-            this.floridaBtn.Click += new System.EventHandler(this.floridaBtn_Click);
+
             // 
             // texasBtn
             // 
@@ -187,7 +187,7 @@
             this.texasBtn.TabIndex = 12;
             this.texasBtn.Text = "TX";
             this.texasBtn.UseVisualStyleBackColor = true;
-            this.texasBtn.Click += new System.EventHandler(this.texasBtn_Click);
+
             // 
             // oklahomaBtn
             // 
@@ -198,7 +198,7 @@
             this.oklahomaBtn.TabIndex = 13;
             this.oklahomaBtn.Text = "OK";
             this.oklahomaBtn.UseVisualStyleBackColor = true;
-            this.oklahomaBtn.Click += new System.EventHandler(this.oklahomaBtn_Click);
+
             // 
             // missouriBtn
             // 
@@ -209,7 +209,7 @@
             this.missouriBtn.TabIndex = 14;
             this.missouriBtn.Text = "MO";
             this.missouriBtn.UseVisualStyleBackColor = true;
-            this.missouriBtn.Click += new System.EventHandler(this.missouriBtn_Click);
+
             // 
             // idahoBtn
             // 
@@ -220,7 +220,7 @@
             this.idahoBtn.TabIndex = 15;
             this.idahoBtn.Text = "ID";
             this.idahoBtn.UseVisualStyleBackColor = true;
-            this.idahoBtn.Click += new System.EventHandler(this.idahoBtn_Click);
+
             // 
             // montanaBtn
             // 
@@ -231,7 +231,7 @@
             this.montanaBtn.TabIndex = 16;
             this.montanaBtn.Text = "MT";
             this.montanaBtn.UseVisualStyleBackColor = true;
-            this.montanaBtn.Click += new System.EventHandler(this.montanaBtn_Click);
+
             // 
             // wyomingBtn
             // 
@@ -242,7 +242,7 @@
             this.wyomingBtn.TabIndex = 17;
             this.wyomingBtn.Text = "WY";
             this.wyomingBtn.UseVisualStyleBackColor = true;
-            this.wyomingBtn.Click += new System.EventHandler(this.wyomingBtn_Click);
+
             // 
             // northDakotaBtn
             // 
@@ -253,7 +253,7 @@
             this.northDakotaBtn.TabIndex = 18;
             this.northDakotaBtn.Text = "ND";
             this.northDakotaBtn.UseVisualStyleBackColor = true;
-            this.northDakotaBtn.Click += new System.EventHandler(this.northDakotaBtn_Click);
+
             // 
             // southDakotaBtn
             // 
@@ -264,7 +264,7 @@
             this.southDakotaBtn.TabIndex = 19;
             this.southDakotaBtn.Text = "SD";
             this.southDakotaBtn.UseVisualStyleBackColor = true;
-            this.southDakotaBtn.Click += new System.EventHandler(this.southDakotaBtn_Click);
+
             // 
             // nebraskaBtn
             // 
@@ -275,7 +275,7 @@
             this.nebraskaBtn.TabIndex = 20;
             this.nebraskaBtn.Text = "NE";
             this.nebraskaBtn.UseVisualStyleBackColor = true;
-            this.nebraskaBtn.Click += new System.EventHandler(this.nebraskaBtn_Click);
+
             // 
             // coloradoBtn
             // 
@@ -286,7 +286,7 @@
             this.coloradoBtn.TabIndex = 21;
             this.coloradoBtn.Text = "CO";
             this.coloradoBtn.UseVisualStyleBackColor = true;
-            this.coloradoBtn.Click += new System.EventHandler(this.coloradoBtn_Click);
+
             // 
             // newMexicoBtn
             // 
@@ -297,7 +297,7 @@
             this.newMexicoBtn.TabIndex = 22;
             this.newMexicoBtn.Text = "NM";
             this.newMexicoBtn.UseVisualStyleBackColor = true;
-            this.newMexicoBtn.Click += new System.EventHandler(this.newMexicoBtn_Click);
+
             // 
             // washingtonBtn
             // 
@@ -308,7 +308,7 @@
             this.washingtonBtn.TabIndex = 23;
             this.washingtonBtn.Text = "WA";
             this.washingtonBtn.UseVisualStyleBackColor = true;
-            this.washingtonBtn.Click += new System.EventHandler(this.washingtonBtn_Click);
+
             // 
             // oregonBtn
             // 
@@ -319,7 +319,7 @@
             this.oregonBtn.TabIndex = 24;
             this.oregonBtn.Text = "OR";
             this.oregonBtn.UseVisualStyleBackColor = true;
-            this.oregonBtn.Click += new System.EventHandler(this.oregonBtn_Click);
+
             // 
             // californiaBtn
             // 
@@ -330,7 +330,7 @@
             this.californiaBtn.TabIndex = 25;
             this.californiaBtn.Text = "CA";
             this.californiaBtn.UseVisualStyleBackColor = true;
-            this.californiaBtn.Click += new System.EventHandler(this.californiaBtn_Click);
+
             // 
             // nevadaBtn
             // 
@@ -341,7 +341,7 @@
             this.nevadaBtn.TabIndex = 26;
             this.nevadaBtn.Text = "NV";
             this.nevadaBtn.UseVisualStyleBackColor = true;
-            this.nevadaBtn.Click += new System.EventHandler(this.nevadaBtn_Click);
+
             // 
             // utahBtn
             // 
@@ -352,7 +352,7 @@
             this.utahBtn.TabIndex = 27;
             this.utahBtn.Text = "UT";
             this.utahBtn.UseVisualStyleBackColor = true;
-            this.utahBtn.Click += new System.EventHandler(this.utahBtn_Click);
+
             // 
             // arizonaBtn
             // 
@@ -363,7 +363,7 @@
             this.arizonaBtn.TabIndex = 28;
             this.arizonaBtn.Text = "AZ";
             this.arizonaBtn.UseVisualStyleBackColor = true;
-            this.arizonaBtn.Click += new System.EventHandler(this.arizonaBtn_Click);
+
             // 
             // kentuckyBtn
             // 
@@ -374,7 +374,7 @@
             this.kentuckyBtn.TabIndex = 29;
             this.kentuckyBtn.Text = "KY";
             this.kentuckyBtn.UseVisualStyleBackColor = true;
-            this.kentuckyBtn.Click += new System.EventHandler(this.kentuckyBtn_Click);
+
             // 
             // indianaBtn
             // 
@@ -385,7 +385,7 @@
             this.indianaBtn.TabIndex = 30;
             this.indianaBtn.Text = "IN";
             this.indianaBtn.UseVisualStyleBackColor = true;
-            this.indianaBtn.Click += new System.EventHandler(this.indianaBtn_Click);
+
             // 
             // illinoisBtn
             // 
@@ -396,7 +396,7 @@
             this.illinoisBtn.TabIndex = 31;
             this.illinoisBtn.Text = "IL";
             this.illinoisBtn.UseVisualStyleBackColor = true;
-            this.illinoisBtn.Click += new System.EventHandler(this.illinoisBtn_Click);
+
             // 
             // wisconsinBtn
             // 
@@ -407,7 +407,7 @@
             this.wisconsinBtn.TabIndex = 32;
             this.wisconsinBtn.Text = "WI";
             this.wisconsinBtn.UseVisualStyleBackColor = true;
-            this.wisconsinBtn.Click += new System.EventHandler(this.wisconsinBtn_Click);
+
             // 
             // virginiaBtn
             // 
@@ -418,7 +418,7 @@
             this.virginiaBtn.TabIndex = 33;
             this.virginiaBtn.Text = "VA";
             this.virginiaBtn.UseVisualStyleBackColor = true;
-            this.virginiaBtn.Click += new System.EventHandler(this.virginiaBtn_Click);
+
             // 
             // pennsylvaniaBtn
             // 
@@ -429,7 +429,7 @@
             this.pennsylvaniaBtn.TabIndex = 34;
             this.pennsylvaniaBtn.Text = "PN";
             this.pennsylvaniaBtn.UseVisualStyleBackColor = true;
-            this.pennsylvaniaBtn.Click += new System.EventHandler(this.pennsylvaniaBtn_Click);
+
             // 
             // ohioBtn
             // 
@@ -440,7 +440,7 @@
             this.ohioBtn.TabIndex = 35;
             this.ohioBtn.Text = "OH";
             this.ohioBtn.UseVisualStyleBackColor = true;
-            this.ohioBtn.Click += new System.EventHandler(this.ohioBtn_Click);
+
             // 
             // westVirginiaBtn
             // 
@@ -451,7 +451,7 @@
             this.westVirginiaBtn.TabIndex = 36;
             this.westVirginiaBtn.Text = "WV";
             this.westVirginiaBtn.UseVisualStyleBackColor = true;
-            this.westVirginiaBtn.Click += new System.EventHandler(this.westVirginaBtn_Click);
+
             // 
             // maineBtn
             // 
@@ -462,7 +462,7 @@
             this.maineBtn.TabIndex = 37;
             this.maineBtn.Text = "ME";
             this.maineBtn.UseVisualStyleBackColor = true;
-            this.maineBtn.Click += new System.EventHandler(this.maineBtn_Click);
+
             // 
             // newYorkBtn
             // 
@@ -473,7 +473,7 @@
             this.newYorkBtn.TabIndex = 38;
             this.newYorkBtn.Text = "NY";
             this.newYorkBtn.UseVisualStyleBackColor = true;
-            this.newYorkBtn.Click += new System.EventHandler(this.newYorkBtn_Click);
+
             // 
             // newHampshireBtn
             // 
@@ -484,7 +484,7 @@
             this.newHampshireBtn.TabIndex = 39;
             this.newHampshireBtn.Text = "NH";
             this.newHampshireBtn.UseVisualStyleBackColor = true;
-            this.newHampshireBtn.Click += new System.EventHandler(this.newHampshireBtn_Click);
+
             // 
             // vermontBtn
             // 
@@ -495,7 +495,7 @@
             this.vermontBtn.TabIndex = 40;
             this.vermontBtn.Text = "VT";
             this.vermontBtn.UseVisualStyleBackColor = true;
-            this.vermontBtn.Click += new System.EventHandler(this.vermontBtn_Click);
+
             // 
             // massachusettsBtn
             // 
@@ -506,7 +506,7 @@
             this.massachusettsBtn.TabIndex = 41;
             this.massachusettsBtn.Text = "MA";
             this.massachusettsBtn.UseVisualStyleBackColor = true;
-            this.massachusettsBtn.Click += new System.EventHandler(this.massachusettsBtn_Click);
+
             // 
             // newJerseyBtn
             // 
@@ -517,7 +517,7 @@
             this.newJerseyBtn.TabIndex = 42;
             this.newJerseyBtn.Text = "NJ";
             this.newJerseyBtn.UseVisualStyleBackColor = true;
-            this.newJerseyBtn.Click += new System.EventHandler(this.newJerseyBtn_Click);
+
             // 
             // rhodeIslandBtn
             // 
@@ -528,7 +528,7 @@
             this.rhodeIslandBtn.TabIndex = 43;
             this.rhodeIslandBtn.Text = "RI";
             this.rhodeIslandBtn.UseVisualStyleBackColor = true;
-            this.rhodeIslandBtn.Click += new System.EventHandler(this.rhodeIslandBtn_Click);
+
             // 
             // marylandBtn
             // 
@@ -539,7 +539,7 @@
             this.marylandBtn.TabIndex = 44;
             this.marylandBtn.Text = "MD";
             this.marylandBtn.UseVisualStyleBackColor = true;
-            this.marylandBtn.Click += new System.EventHandler(this.marylandBtn_Click);
+
             // 
             // delawareBtn
             // 
@@ -550,7 +550,7 @@
             this.delawareBtn.TabIndex = 45;
             this.delawareBtn.Text = "DE";
             this.delawareBtn.UseVisualStyleBackColor = true;
-            this.delawareBtn.Click += new System.EventHandler(this.delawareBtn_Click);
+
             // 
             // connecticutBtn
             // 
@@ -561,7 +561,7 @@
             this.connecticutBtn.TabIndex = 46;
             this.connecticutBtn.Text = "CT";
             this.connecticutBtn.UseVisualStyleBackColor = true;
-            this.connecticutBtn.Click += new System.EventHandler(this.connecticutBtn_Click);
+
             // 
             // michiganBtn
             // 
@@ -573,7 +573,7 @@
             this.michiganBtn.TabIndex = 47;
             this.michiganBtn.Text = "MI";
             this.michiganBtn.UseVisualStyleBackColor = true;
-            this.michiganBtn.Click += new System.EventHandler(this.michiganBtn_Click);
+
             // 
             // hawaiiBtn
             // 
@@ -584,7 +584,7 @@
             this.hawaiiBtn.TabIndex = 48;
             this.hawaiiBtn.Text = "HI";
             this.hawaiiBtn.UseVisualStyleBackColor = true;
-            this.hawaiiBtn.Click += new System.EventHandler(this.hawaiiBtn_Click);
+
             // 
             // alaskaBtn
             // 
@@ -595,7 +595,7 @@
             this.alaskaBtn.TabIndex = 49;
             this.alaskaBtn.Text = "AK";
             this.alaskaBtn.UseVisualStyleBackColor = true;
-            this.alaskaBtn.Click += new System.EventHandler(this.alaskaBtn_Click);
+
             // 
             // louisianaBtn
             // 
@@ -606,7 +606,7 @@
             this.louisianaBtn.TabIndex = 11;
             this.louisianaBtn.Text = "LA";
             this.louisianaBtn.UseVisualStyleBackColor = true;
-            this.louisianaBtn.Click += new System.EventHandler(this.louisianaBtn_Click);
+
             // 
             // minnesotaBtn
             // 
@@ -617,7 +617,7 @@
             this.minnesotaBtn.TabIndex = 50;
             this.minnesotaBtn.Text = "MN";
             this.minnesotaBtn.UseVisualStyleBackColor = true;
-            this.minnesotaBtn.Click += new System.EventHandler(this.minnesotaBtn_Click);
+
             // 
             // arkansasBtn
             // 
@@ -628,7 +628,7 @@
             this.arkansasBtn.TabIndex = 2;
             this.arkansasBtn.Text = "AR";
             this.arkansasBtn.UseVisualStyleBackColor = true;
-            this.arkansasBtn.Click += new System.EventHandler(this.arkansasBtn_Click);
+
             // 
             // alabamaBtn
             // 
@@ -639,7 +639,7 @@
             this.alabamaBtn.TabIndex = 7;
             this.alabamaBtn.Text = "AL";
             this.alabamaBtn.UseVisualStyleBackColor = true;
-            this.alabamaBtn.Click += new System.EventHandler(this.alabamaBtn_Click);
+
             // 
             // manageFlightsBtn
             // 
@@ -650,7 +650,7 @@
             this.manageFlightsBtn.TabIndex = 51;
             this.manageFlightsBtn.Text = "Manage Flights";
             this.manageFlightsBtn.UseVisualStyleBackColor = true;
-            this.manageFlightsBtn.Click += new System.EventHandler(this.button1_Click);
+
             // 
             // manageEmployeesBtn
             // 
@@ -694,7 +694,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // MapWindow
             // 

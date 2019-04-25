@@ -132,8 +132,5 @@
   <ItemGroup>
     <None Include="Properties\louisiana.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Content Include="Airport Query.sql" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
