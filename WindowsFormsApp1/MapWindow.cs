@@ -15,7 +15,6 @@ namespace WindowsFormsApp1
     public partial class MapWindow : Form
     {
         DatabaseConnection dbConnection = new DatabaseConnection();
-        userSelectWindow window = new userSelectWindow();
         EmployeesWindow employeesWindow = new EmployeesWindow();
         AirportsWindow airportsWindow = new AirportsWindow();
         public int statenum = 50;
