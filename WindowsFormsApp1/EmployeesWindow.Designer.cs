@@ -33,17 +33,18 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.employeeIDBox = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.lNameBox = new System.Windows.Forms.TextBox();
+            this.fNameBox = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.addBtn = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.airportIDBox = new System.Windows.Forms.TextBox();
+            this.emailBox = new System.Windows.Forms.TextBox();
+            this.airlineIDBox = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.employeeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.employeeGridView = new System.Windows.Forms.DataGridView();
             this.backBtn = new System.Windows.Forms.Button();
+            this.deleteBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.employeeGridView)).BeginInit();
             this.SuspendLayout();
@@ -86,21 +87,21 @@
             this.employeeIDBox.Size = new System.Drawing.Size(166, 26);
             this.employeeIDBox.TabIndex = 4;
             // 
-            // textBox3
+            // lNameBox
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(159, 169);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(166, 26);
-            this.textBox3.TabIndex = 6;
+            this.lNameBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lNameBox.Location = new System.Drawing.Point(159, 169);
+            this.lNameBox.Name = "lNameBox";
+            this.lNameBox.Size = new System.Drawing.Size(166, 26);
+            this.lNameBox.TabIndex = 6;
             // 
-            // textBox4
+            // fNameBox
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(159, 119);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(166, 26);
-            this.textBox4.TabIndex = 7;
+            this.fNameBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fNameBox.Location = new System.Drawing.Point(159, 119);
+            this.fNameBox.Name = "fNameBox";
+            this.fNameBox.Size = new System.Drawing.Size(166, 26);
+            this.fNameBox.TabIndex = 7;
             // 
             // button1
             // 
@@ -111,17 +112,18 @@
             this.button1.TabIndex = 8;
             this.button1.Text = "Update Employee";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // addBtn
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(12, 273);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(156, 56);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "Add Employee";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.addBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addBtn.Location = new System.Drawing.Point(12, 273);
+            this.addBtn.Name = "addBtn";
+            this.addBtn.Size = new System.Drawing.Size(156, 56);
+            this.addBtn.TabIndex = 9;
+            this.addBtn.Text = "Add Employee";
+            this.addBtn.UseVisualStyleBackColor = true;
+            this.addBtn.Click += new System.EventHandler(this.addBtn_Click);
             // 
             // label5
             // 
@@ -133,21 +135,21 @@
             this.label5.TabIndex = 10;
             this.label5.Text = "Email";
             // 
-            // textBox5
+            // emailBox
             // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(159, 219);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(166, 26);
-            this.textBox5.TabIndex = 11;
+            this.emailBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.emailBox.Location = new System.Drawing.Point(159, 219);
+            this.emailBox.Name = "emailBox";
+            this.emailBox.Size = new System.Drawing.Size(166, 26);
+            this.emailBox.TabIndex = 11;
             // 
-            // airportIDBox
+            // airlineIDBox
             // 
-            this.airportIDBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.airportIDBox.Location = new System.Drawing.Point(159, 68);
-            this.airportIDBox.Name = "airportIDBox";
-            this.airportIDBox.Size = new System.Drawing.Size(166, 26);
-            this.airportIDBox.TabIndex = 15;
+            this.airlineIDBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.airlineIDBox.Location = new System.Drawing.Point(159, 68);
+            this.airlineIDBox.Name = "airlineIDBox";
+            this.airlineIDBox.Size = new System.Drawing.Size(166, 26);
+            this.airlineIDBox.TabIndex = 15;
             // 
             // label7
             // 
@@ -164,35 +166,48 @@
             this.employeeGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.employeeGridView.Location = new System.Drawing.Point(342, 18);
             this.employeeGridView.Name = "employeeGridView";
-            this.employeeGridView.Size = new System.Drawing.Size(560, 373);
+            this.employeeGridView.Size = new System.Drawing.Size(671, 373);
             this.employeeGridView.TabIndex = 16;
+            this.employeeGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.employeeGridView_CellClick);
             // 
             // backBtn
             // 
             this.backBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.backBtn.Location = new System.Drawing.Point(12, 335);
             this.backBtn.Name = "backBtn";
-            this.backBtn.Size = new System.Drawing.Size(318, 56);
+            this.backBtn.Size = new System.Drawing.Size(156, 56);
             this.backBtn.TabIndex = 17;
             this.backBtn.Text = "Back";
             this.backBtn.UseVisualStyleBackColor = true;
             this.backBtn.Click += new System.EventHandler(this.backBtn_Click);
             // 
+            // deleteBtn
+            // 
+            this.deleteBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deleteBtn.Location = new System.Drawing.Point(174, 334);
+            this.deleteBtn.Name = "deleteBtn";
+            this.deleteBtn.Size = new System.Drawing.Size(156, 56);
+            this.deleteBtn.TabIndex = 18;
+            this.deleteBtn.Text = "DELETE";
+            this.deleteBtn.UseVisualStyleBackColor = true;
+            this.deleteBtn.Click += new System.EventHandler(this.deleteBtn_Click);
+            // 
             // EmployeesWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(914, 402);
+            this.ClientSize = new System.Drawing.Size(1025, 402);
+            this.Controls.Add(this.deleteBtn);
             this.Controls.Add(this.backBtn);
             this.Controls.Add(this.employeeGridView);
-            this.Controls.Add(this.airportIDBox);
+            this.Controls.Add(this.airlineIDBox);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.emailBox);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.addBtn);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.fNameBox);
+            this.Controls.Add(this.lNameBox);
             this.Controls.Add(this.employeeIDBox);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -213,13 +228,13 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox employeeIDBox;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox lNameBox;
+        private System.Windows.Forms.TextBox fNameBox;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button addBtn;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox airportIDBox;
+        private System.Windows.Forms.TextBox emailBox;
+        private System.Windows.Forms.TextBox airlineIDBox;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.BindingSource employeeBindingSource;
         private System.Windows.Forms.DataGridViewTextBoxColumn employeeIDDataGridViewTextBoxColumn;
@@ -230,5 +245,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridView employeeGridView;
         private System.Windows.Forms.Button backBtn;
+        private System.Windows.Forms.Button deleteBtn;
     }
 }

@@ -17,6 +17,7 @@ namespace WindowsFormsApp1
         DatabaseConnection dbConnection = new DatabaseConnection();
         EmployeesWindow employeesWindow = new EmployeesWindow();
         AirportsWindow airportsWindow = new AirportsWindow();
+        FlightsWindow flightsWindow = new FlightsWindow();
         public int statenum = 50;
 
 
@@ -95,7 +96,7 @@ namespace WindowsFormsApp1
 
 
             }
-            Label[] labelArray = {alaskaBtn, alabamaBtn, arkansasBtn, arizonaBtn, californiaBtn, coloradoBtn, connecticutBtn, delawareBtn, floridaBtn, hawaiiBtn, idahoBtn, illinoisBtn, indianaBtn,
+            Label[] labelArray = {alaskaBtn, alabamaBtn, arkansasBtn, arizonaBtn, californiaBtn, coloradoBtn, connecticutBtn, delawareBtn, floridaBtn, georgiaBtn, hawaiiBtn, idahoBtn, illinoisBtn, indianaBtn,
             iowaBtn, kansasBtn, kentuckyBtn, louisianaBtn, massachusettsBtn, marylandBtn, maineBtn,  michiganBtn, minnesotaBtn, missouriBtn, mississippiBtn, montanaBtn, northCarolinaBtn, northDakotaBtn, nebraskaBtn,
             newHampshireBtn, newJerseyBtn, newMexicoBtn, nevadaBtn, newYorkBtn, ohioBtn, oklahomaBtn, oregonBtn, pennsylvaniaBtn, rhodeIslandBtn,
             southCarolinaBtn, southDakotaBtn, tennesseeBtn, texasBtn, utahBtn, virginiaBtn, vermontBtn, washingtonBtn, wisconsinBtn, westVirginiaBtn, wyomingBtn };
@@ -166,6 +167,18 @@ namespace WindowsFormsApp1
 
         }
 
+        private void manageFlightsBtn_Click(object sender, EventArgs e)
+        {
+            if (Application.OpenForms.OfType<FlightsWindow>().Count() == 1)
+            {
+                Application.OpenForms.OfType<FlightsWindow>().First().Show();
+            }
+            else
+            {
+                flightsWindow.Show();
+            }
+            this.Hide();
+        }
     }
 
 }

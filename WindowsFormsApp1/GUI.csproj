@@ -71,6 +71,12 @@
     <Compile Include="EmployeesWindow.Designer.cs">
       <DependentUpon>EmployeesWindow.cs</DependentUpon>
     </Compile>
+    <Compile Include="FlightsWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlightsWindow.Designer.cs">
+      <DependentUpon>FlightsWindow.cs</DependentUpon>
+    </Compile>
     <Compile Include="MapWindow.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +93,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EmployeesWindow.resx">
       <DependentUpon>EmployeesWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlightsWindow.resx">
+      <DependentUpon>FlightsWindow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MapWindow.resx">
       <DependentUpon>MapWindow.cs</DependentUpon>

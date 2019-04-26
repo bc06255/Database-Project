@@ -100,6 +100,80 @@ namespace WindowsFormsApp1
 
         }
 
-        
+        private void addBtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                SqlConnection connection = new SqlConnection(dbConnection.getConnection());
+                connection.Open();
+                String insert = "INSERT INTO AIRPORT(AirportID, StateID, AirportCity, AirportName, PassengersPerYear) VALUES(@AirportID, @StateID, @AirportCity, @AirportName, @Pass)";
+                SqlCommand command = new SqlCommand(insert, connection);
+                command.Parameters.AddWithValue("@AirportID", airportIDBox.Text);
+                command.Parameters.AddWithValue("@StateID", airportStateBox.Text);
+                command.Parameters.AddWithValue("@AirportCity", airportCityBox.Text);
+                command.Parameters.AddWithValue("@AirportName", airportNameBox.Text);
+                command.Parameters.AddWithValue("@Pass", passPerYearBox.Text);
+
+                command.ExecuteNonQuery();
+
+                SqlDataAdapter dataadapter = new SqlDataAdapter(insert, connection);
+                ds.Tables[0].Clear();
+                dataadapter.Fill(ds, "Airport");
+                connection.Close();
+                
+                airportsGridView.DataSource = ds.Tables[0];
+            }
+            catch (SqlException)
+            {
+            }
+        }
+
+        private void deleteBtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                SqlConnection connection = new SqlConnection(dbConnection.getConnection());
+                connection.Open();
+                String delete = "DELETE FROM AIRPORT WHERE AirportID = @AirportID";
+                SqlCommand command = new SqlCommand(delete, connection);
+
+                command.Parameters.AddWithValue("@AirportID", airportIDBox.Text);
+
+                command.ExecuteNonQuery();
+
+                SqlDataAdapter dataadapter = new SqlDataAdapter(delete, connection);
+                dataadapter.Fill(ds, "Airport");
+                connection.Close();
+                airportsGridView.DataSource = ds.Tables[0];
+            }
+            catch (SqlException) { }
+            
+        }
+
+        private void updateBtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+                SqlConnection connection = new SqlConnection(dbConnection.getConnection());
+                connection.Open();
+                String update = "UPDATE AIRPORT SET StateID = @StateID, AirportCity = @AirportCity, AirportName = @AirportName, PassengersPerYear = @Pass WHERE AirportID = @AirportID";
+                SqlCommand command = new SqlCommand(update, connection);
+                command.Parameters.AddWithValue("@StateID", airportStateBox.Text);
+                command.Parameters.AddWithValue("@AirportCity", airportCityBox.Text);
+                command.Parameters.AddWithValue("@AirportName", airportNameBox.Text);
+                command.Parameters.AddWithValue("@Pass", passPerYearBox.Text);
+                command.Parameters.AddWithValue("@AirportID", airportIDBox.Text);
+
+                command.ExecuteNonQuery();
+
+                SqlDataAdapter dataadapter = new SqlDataAdapter(update, connection);
+                dataadapter.Fill(ds, "Airport");
+                connection.Close();
+                airportsGridView.DataSource = ds.Tables[0];
+
+            }
+            catch (SqlException) { }
+        }
     }
 }

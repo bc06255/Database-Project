@@ -67,6 +67,7 @@ namespace WindowsFormsApp1
                 command.ExecuteNonQuery();
 
                 SqlDataAdapter dataadapter = new SqlDataAdapter(select, connection);
+                ds.Tables[0].Clear();
                 dataadapter.Fill(ds, "Airline");
                 connection.Close();
                 airlinesGridView.DataSource = ds.Tables[0];

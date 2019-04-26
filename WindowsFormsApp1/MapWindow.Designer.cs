@@ -105,7 +105,6 @@
             this.tennesseeBtn.Size = new System.Drawing.Size(39, 28);
             this.tennesseeBtn.TabIndex = 3;
             this.tennesseeBtn.Text = "TN";
-
             // 
             // northCarolinaBtn
             // 
@@ -115,7 +114,6 @@
             this.northCarolinaBtn.Size = new System.Drawing.Size(42, 28);
             this.northCarolinaBtn.TabIndex = 4;
             this.northCarolinaBtn.Text = "NC";
-
             // 
             // southCarolinaBtn
             // 
@@ -125,7 +123,6 @@
             this.southCarolinaBtn.Size = new System.Drawing.Size(41, 28);
             this.southCarolinaBtn.TabIndex = 5;
             this.southCarolinaBtn.Text = "SC";
-
             // 
             // mississippiBtn
             // 
@@ -135,7 +132,6 @@
             this.mississippiBtn.Size = new System.Drawing.Size(43, 28);
             this.mississippiBtn.TabIndex = 6;
             this.mississippiBtn.Text = "MS";
-
             // 
             // iowaBtn
             // 
@@ -145,7 +141,6 @@
             this.iowaBtn.Size = new System.Drawing.Size(37, 28);
             this.iowaBtn.TabIndex = 8;
             this.iowaBtn.Text = "IA";
-
             // 
             // kansasBtn
             // 
@@ -155,7 +150,6 @@
             this.kansasBtn.Size = new System.Drawing.Size(40, 28);
             this.kansasBtn.TabIndex = 9;
             this.kansasBtn.Text = "KS";
-
             // 
             // floridaBtn
             // 
@@ -165,7 +159,6 @@
             this.floridaBtn.Size = new System.Drawing.Size(38, 28);
             this.floridaBtn.TabIndex = 10;
             this.floridaBtn.Text = "FL";
-
             // 
             // texasBtn
             // 
@@ -175,7 +168,6 @@
             this.texasBtn.Size = new System.Drawing.Size(40, 28);
             this.texasBtn.TabIndex = 12;
             this.texasBtn.Text = "TX";
-
             // 
             // oklahomaBtn
             // 
@@ -185,7 +177,6 @@
             this.oklahomaBtn.Size = new System.Drawing.Size(41, 28);
             this.oklahomaBtn.TabIndex = 13;
             this.oklahomaBtn.Text = "OK";
-
             // 
             // missouriBtn
             // 
@@ -195,7 +186,6 @@
             this.missouriBtn.Size = new System.Drawing.Size(44, 28);
             this.missouriBtn.TabIndex = 14;
             this.missouriBtn.Text = "MO";
-
             // 
             // idahoBtn
             // 
@@ -205,7 +195,6 @@
             this.idahoBtn.Size = new System.Drawing.Size(36, 28);
             this.idahoBtn.TabIndex = 15;
             this.idahoBtn.Text = "ID";
-
             // 
             // montanaBtn
             // 
@@ -215,7 +204,6 @@
             this.montanaBtn.Size = new System.Drawing.Size(42, 28);
             this.montanaBtn.TabIndex = 16;
             this.montanaBtn.Text = "MT";
-
             // 
             // wyomingBtn
             // 
@@ -225,7 +213,6 @@
             this.wyomingBtn.Size = new System.Drawing.Size(45, 28);
             this.wyomingBtn.TabIndex = 17;
             this.wyomingBtn.Text = "WY";
-
             // 
             // northDakotaBtn
             // 
@@ -235,7 +222,6 @@
             this.northDakotaBtn.Size = new System.Drawing.Size(42, 28);
             this.northDakotaBtn.TabIndex = 18;
             this.northDakotaBtn.Text = "ND";
-
             // 
             // southDakotaBtn
             // 
@@ -245,7 +231,6 @@
             this.southDakotaBtn.Size = new System.Drawing.Size(42, 28);
             this.southDakotaBtn.TabIndex = 19;
             this.southDakotaBtn.Text = "SD";
-
             // 
             // nebraskaBtn
             // 
@@ -255,7 +240,6 @@
             this.nebraskaBtn.Size = new System.Drawing.Size(41, 28);
             this.nebraskaBtn.TabIndex = 20;
             this.nebraskaBtn.Text = "NE";
-
             // 
             // coloradoBtn
             // 
@@ -265,7 +249,6 @@
             this.coloradoBtn.Size = new System.Drawing.Size(43, 28);
             this.coloradoBtn.TabIndex = 21;
             this.coloradoBtn.Text = "CO";
-
             // 
             // newMexicoBtn
             // 
@@ -275,7 +258,6 @@
             this.newMexicoBtn.Size = new System.Drawing.Size(43, 28);
             this.newMexicoBtn.TabIndex = 22;
             this.newMexicoBtn.Text = "NM";
-
             // 
             // washingtonBtn
             // 
@@ -285,7 +267,6 @@
             this.washingtonBtn.Size = new System.Drawing.Size(45, 28);
             this.washingtonBtn.TabIndex = 23;
             this.washingtonBtn.Text = "WA";
-
             // 
             // oregonBtn
             // 
@@ -295,7 +276,6 @@
             this.oregonBtn.Size = new System.Drawing.Size(43, 28);
             this.oregonBtn.TabIndex = 24;
             this.oregonBtn.Text = "OR";
-
             // 
             // californiaBtn
             // 
@@ -305,7 +285,6 @@
             this.californiaBtn.Size = new System.Drawing.Size(42, 28);
             this.californiaBtn.TabIndex = 25;
             this.californiaBtn.Text = "CA";
-
             // 
             // nevadaBtn
             // 
@@ -315,7 +294,6 @@
             this.nevadaBtn.Size = new System.Drawing.Size(41, 28);
             this.nevadaBtn.TabIndex = 26;
             this.nevadaBtn.Text = "NV";
-
             // 
             // utahBtn
             // 
@@ -325,7 +303,6 @@
             this.utahBtn.Size = new System.Drawing.Size(40, 28);
             this.utahBtn.TabIndex = 27;
             this.utahBtn.Text = "UT";
-
             // 
             // arizonaBtn
             // 
@@ -335,7 +312,6 @@
             this.arizonaBtn.Size = new System.Drawing.Size(40, 28);
             this.arizonaBtn.TabIndex = 28;
             this.arizonaBtn.Text = "AZ";
-
             // 
             // kentuckyBtn
             // 
@@ -345,7 +321,6 @@
             this.kentuckyBtn.Size = new System.Drawing.Size(41, 28);
             this.kentuckyBtn.TabIndex = 29;
             this.kentuckyBtn.Text = "KY";
-
             // 
             // indianaBtn
             // 
@@ -355,7 +330,6 @@
             this.indianaBtn.Size = new System.Drawing.Size(37, 28);
             this.indianaBtn.TabIndex = 30;
             this.indianaBtn.Text = "IN";
-
             // 
             // illinoisBtn
             // 
@@ -365,7 +339,6 @@
             this.illinoisBtn.Size = new System.Drawing.Size(33, 28);
             this.illinoisBtn.TabIndex = 31;
             this.illinoisBtn.Text = "IL";
-
             // 
             // wisconsinBtn
             // 
@@ -375,7 +348,6 @@
             this.wisconsinBtn.Size = new System.Drawing.Size(39, 28);
             this.wisconsinBtn.TabIndex = 32;
             this.wisconsinBtn.Text = "WI";
-
             // 
             // virginiaBtn
             // 
@@ -385,7 +357,6 @@
             this.virginiaBtn.Size = new System.Drawing.Size(41, 28);
             this.virginiaBtn.TabIndex = 33;
             this.virginiaBtn.Text = "VA";
-
             // 
             // pennsylvaniaBtn
             // 
@@ -395,7 +366,6 @@
             this.pennsylvaniaBtn.Size = new System.Drawing.Size(40, 28);
             this.pennsylvaniaBtn.TabIndex = 34;
             this.pennsylvaniaBtn.Text = "PN";
-
             // 
             // ohioBtn
             // 
@@ -405,7 +375,6 @@
             this.ohioBtn.Size = new System.Drawing.Size(43, 28);
             this.ohioBtn.TabIndex = 35;
             this.ohioBtn.Text = "OH";
-
             // 
             // westVirginiaBtn
             // 
@@ -415,7 +384,6 @@
             this.westVirginiaBtn.Size = new System.Drawing.Size(45, 28);
             this.westVirginiaBtn.TabIndex = 36;
             this.westVirginiaBtn.Text = "WV";
-
             // 
             // maineBtn
             // 
@@ -425,7 +393,6 @@
             this.maineBtn.Size = new System.Drawing.Size(43, 28);
             this.maineBtn.TabIndex = 37;
             this.maineBtn.Text = "ME";
-
             // 
             // newYorkBtn
             // 
@@ -435,7 +402,6 @@
             this.newYorkBtn.Size = new System.Drawing.Size(41, 28);
             this.newYorkBtn.TabIndex = 38;
             this.newYorkBtn.Text = "NY";
-
             // 
             // newHampshireBtn
             // 
@@ -445,7 +411,6 @@
             this.newHampshireBtn.Size = new System.Drawing.Size(42, 28);
             this.newHampshireBtn.TabIndex = 39;
             this.newHampshireBtn.Text = "NH";
-
             // 
             // vermontBtn
             // 
@@ -455,7 +420,6 @@
             this.vermontBtn.Size = new System.Drawing.Size(39, 28);
             this.vermontBtn.TabIndex = 40;
             this.vermontBtn.Text = "VT";
-
             // 
             // massachusettsBtn
             // 
@@ -465,7 +429,6 @@
             this.massachusettsBtn.Size = new System.Drawing.Size(43, 28);
             this.massachusettsBtn.TabIndex = 41;
             this.massachusettsBtn.Text = "MA";
-
             // 
             // newJerseyBtn
             // 
@@ -475,7 +438,6 @@
             this.newJerseyBtn.Size = new System.Drawing.Size(38, 28);
             this.newJerseyBtn.TabIndex = 42;
             this.newJerseyBtn.Text = "NJ";
-
             // 
             // rhodeIslandBtn
             // 
@@ -485,7 +447,6 @@
             this.rhodeIslandBtn.Size = new System.Drawing.Size(36, 28);
             this.rhodeIslandBtn.TabIndex = 43;
             this.rhodeIslandBtn.Text = "RI";
-
             // 
             // marylandBtn
             // 
@@ -495,7 +456,6 @@
             this.marylandBtn.Size = new System.Drawing.Size(44, 28);
             this.marylandBtn.TabIndex = 44;
             this.marylandBtn.Text = "MD";
-
             // 
             // delawareBtn
             // 
@@ -524,7 +484,6 @@
             this.michiganBtn.Size = new System.Drawing.Size(37, 28);
             this.michiganBtn.TabIndex = 47;
             this.michiganBtn.Text = "MI";
-
             // 
             // hawaiiBtn
             // 
@@ -534,7 +493,6 @@
             this.hawaiiBtn.Size = new System.Drawing.Size(36, 28);
             this.hawaiiBtn.TabIndex = 48;
             this.hawaiiBtn.Text = "HI";
-
             // 
             // alaskaBtn
             // 
@@ -544,7 +502,6 @@
             this.alaskaBtn.Size = new System.Drawing.Size(40, 28);
             this.alaskaBtn.TabIndex = 49;
             this.alaskaBtn.Text = "AK";
-
             // 
             // louisianaBtn
             // 
@@ -554,7 +511,6 @@
             this.louisianaBtn.Size = new System.Drawing.Size(40, 28);
             this.louisianaBtn.TabIndex = 11;
             this.louisianaBtn.Text = "LA";
-
             // 
             // minnesotaBtn
             // 
@@ -564,7 +520,6 @@
             this.minnesotaBtn.Size = new System.Drawing.Size(43, 28);
             this.minnesotaBtn.TabIndex = 50;
             this.minnesotaBtn.Text = "MN";
-
             // 
             // arkansasBtn
             // 
@@ -574,7 +529,6 @@
             this.arkansasBtn.Size = new System.Drawing.Size(42, 28);
             this.arkansasBtn.TabIndex = 2;
             this.arkansasBtn.Text = "AR";
-
             // 
             // alabamaBtn
             // 
@@ -584,7 +538,6 @@
             this.alabamaBtn.Size = new System.Drawing.Size(39, 28);
             this.alabamaBtn.TabIndex = 7;
             this.alabamaBtn.Text = "AL";
-
             // 
             // manageFlightsBtn
             // 
@@ -595,6 +548,7 @@
             this.manageFlightsBtn.TabIndex = 51;
             this.manageFlightsBtn.Text = "Manage Flights";
             this.manageFlightsBtn.UseVisualStyleBackColor = true;
+            this.manageFlightsBtn.Click += new System.EventHandler(this.manageFlightsBtn_Click);
             // 
             // manageEmployeesBtn
             // 

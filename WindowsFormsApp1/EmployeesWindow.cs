@@ -15,16 +15,14 @@ namespace WindowsFormsApp1
     {
         DatabaseConnection dbConnection = new DatabaseConnection();
         DataSet ds = new DataSet();
+        String select = "SELECT EmployeeID, FirstName, LastName, EMPLOYEE.AirlineID, AirlineName, Email FROM EMPLOYEE JOIN AIRLINE ON Employee.AirlineID = AIRLINE.AirlineID";
 
         public EmployeesWindow()
         {
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
@@ -34,7 +32,6 @@ namespace WindowsFormsApp1
         private void EmployeesWindow_Load(object sender, EventArgs e)
         {
             SqlConnection connection = new SqlConnection(dbConnection.getConnection());
-            String select = "SELECT EmployeeID, AirlineID, FirstName, LastName, Email FROM EMPLOYEE";
             SqlDataAdapter dataadapter = new SqlDataAdapter(select, connection);
             connection.Open();
             dataadapter.Fill(ds, "Employee1");
@@ -53,6 +50,89 @@ namespace WindowsFormsApp1
             {
                 Application.OpenForms.OfType<MapWindow>().First().Close();
             }
+        }
+
+        private void employeeGridView_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            employeeIDBox.Text = employeeGridView.Rows[e.RowIndex].Cells[0].Value.ToString();
+            airlineIDBox.Text = employeeGridView.Rows[e.RowIndex].Cells[3].Value.ToString();
+            fNameBox.Text = employeeGridView.Rows[e.RowIndex].Cells[1].Value.ToString();
+            lNameBox.Text = employeeGridView.Rows[e.RowIndex].Cells[2].Value.ToString();
+            emailBox.Text = employeeGridView.Rows[e.RowIndex].Cells[5].Value.ToString();
+        }
+
+        private void addBtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                SqlConnection connection = new SqlConnection(dbConnection.getConnection());
+                connection.Open();
+                String insert = "INSERT INTO EMPLOYEE(EmployeeID, AirlineID, FirstName, LastName, Email) VALUES(@EmployeeID, @AirlineID, @FirstName, @LastName, @Email)";
+                SqlCommand command = new SqlCommand(insert, connection);
+                command.Parameters.AddWithValue("@EmployeeID", employeeIDBox.Text);
+                command.Parameters.AddWithValue("@AirlineID", airlineIDBox.Text);
+                command.Parameters.AddWithValue("@FirstName", fNameBox.Text);
+                command.Parameters.AddWithValue("@LastName", lNameBox.Text);
+                command.Parameters.AddWithValue("@Email", emailBox.Text);
+
+                command.ExecuteNonQuery();
+
+                SqlDataAdapter dataadapter = new SqlDataAdapter(select, connection);
+                ds.Tables[0].Clear();
+                dataadapter.Fill(ds, "Employee");
+                connection.Close();
+                employeeGridView.DataSource = ds.Tables[0];
+            }
+            catch (SqlException)
+            {
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+                SqlConnection connection = new SqlConnection(dbConnection.getConnection());
+                connection.Open();
+                String update = "UPDATE EMPLOYEE SET AirlineID = @AirlineID, FirstName = @FirstName, LastName = @LastName, Email = @Email WHERE EmployeeID = @EmployeeID";
+                SqlCommand command = new SqlCommand(update, connection);
+                command.Parameters.AddWithValue("@EmployeeID", employeeIDBox.Text);
+                command.Parameters.AddWithValue("@AirlineID", airlineIDBox.Text);
+                command.Parameters.AddWithValue("@FirstName", fNameBox.Text);
+                command.Parameters.AddWithValue("@LastName", lNameBox.Text);
+                command.Parameters.AddWithValue("@Email", emailBox.Text);
+
+                command.ExecuteNonQuery();
+
+                SqlDataAdapter dataadapter = new SqlDataAdapter(select, connection);
+                ds.Tables[0].Clear();
+                dataadapter.Fill(ds, "Employee");
+                connection.Close();
+                employeeGridView.DataSource = ds.Tables[0];
+
+            }
+            catch (SqlException) { }
+        }
+
+        private void deleteBtn_Click(object sender, EventArgs e)
+        {
+            SqlConnection connection = new SqlConnection(dbConnection.getConnection());
+            connection.Open();
+            String delete = "DELETE FROM EMPLOYEE WHERE EmployeeID = @EmployeeID";
+            SqlCommand command = new SqlCommand(delete, connection);
+
+            command.Parameters.AddWithValue("EmployeeID", employeeIDBox.Text);
+
+            command.ExecuteNonQuery();
+
+            SqlDataAdapter dataadapter = new SqlDataAdapter(select, connection);
+            ds.Tables[0].Clear();
+            dataadapter.Fill(ds, "Employee");
+            connection.Close();
+            employeeGridView.DataSource = ds.Tables[0];
+
+            
         }
     }
 }

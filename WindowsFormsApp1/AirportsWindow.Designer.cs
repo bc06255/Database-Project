@@ -39,9 +39,10 @@
             this.airportStateLbl = new System.Windows.Forms.Label();
             this.airportCityLbl = new System.Windows.Forms.Label();
             this.airportNameLbl = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.addBtn = new System.Windows.Forms.Button();
+            this.updateBtn = new System.Windows.Forms.Button();
             this.backBtn = new System.Windows.Forms.Button();
+            this.deleteBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.airportsGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -147,45 +148,59 @@
             this.airportNameLbl.TabIndex = 10;
             this.airportNameLbl.Text = "Name";
             // 
-            // button1
+            // addBtn
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(12, 302);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(130, 70);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Add Airport";
-            this.button1.UseVisualStyleBackColor = true;
+            this.addBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addBtn.Location = new System.Drawing.Point(12, 302);
+            this.addBtn.Name = "addBtn";
+            this.addBtn.Size = new System.Drawing.Size(130, 70);
+            this.addBtn.TabIndex = 11;
+            this.addBtn.Text = "Add Airport";
+            this.addBtn.UseVisualStyleBackColor = true;
+            this.addBtn.Click += new System.EventHandler(this.addBtn_Click);
             // 
-            // button2
+            // updateBtn
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(154, 302);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(130, 70);
-            this.button2.TabIndex = 12;
-            this.button2.Text = "Update Airport";
-            this.button2.UseVisualStyleBackColor = true;
+            this.updateBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updateBtn.Location = new System.Drawing.Point(154, 302);
+            this.updateBtn.Name = "updateBtn";
+            this.updateBtn.Size = new System.Drawing.Size(130, 70);
+            this.updateBtn.TabIndex = 12;
+            this.updateBtn.Text = "Update Airport";
+            this.updateBtn.UseVisualStyleBackColor = true;
+            this.updateBtn.Click += new System.EventHandler(this.updateBtn_Click);
             // 
             // backBtn
             // 
             this.backBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.backBtn.Location = new System.Drawing.Point(12, 378);
             this.backBtn.Name = "backBtn";
-            this.backBtn.Size = new System.Drawing.Size(272, 60);
+            this.backBtn.Size = new System.Drawing.Size(130, 60);
             this.backBtn.TabIndex = 13;
             this.backBtn.Text = "Back";
             this.backBtn.UseVisualStyleBackColor = true;
             this.backBtn.Click += new System.EventHandler(this.backBtn_Click);
+            // 
+            // deleteBtn
+            // 
+            this.deleteBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deleteBtn.Location = new System.Drawing.Point(154, 378);
+            this.deleteBtn.Name = "deleteBtn";
+            this.deleteBtn.Size = new System.Drawing.Size(130, 60);
+            this.deleteBtn.TabIndex = 14;
+            this.deleteBtn.Text = "Delete";
+            this.deleteBtn.UseVisualStyleBackColor = true;
+            this.deleteBtn.Click += new System.EventHandler(this.deleteBtn_Click);
             // 
             // AirportsWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(881, 450);
+            this.Controls.Add(this.deleteBtn);
             this.Controls.Add(this.backBtn);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.updateBtn);
+            this.Controls.Add(this.addBtn);
             this.Controls.Add(this.airportNameLbl);
             this.Controls.Add(this.airportCityLbl);
             this.Controls.Add(this.airportStateLbl);
@@ -219,8 +234,9 @@
         private System.Windows.Forms.Label airportStateLbl;
         private System.Windows.Forms.Label airportCityLbl;
         private System.Windows.Forms.Label airportNameLbl;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button addBtn;
+        private System.Windows.Forms.Button updateBtn;
         private System.Windows.Forms.Button backBtn;
+        private System.Windows.Forms.Button deleteBtn;
     }
 }
