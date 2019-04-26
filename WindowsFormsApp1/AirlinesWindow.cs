@@ -15,10 +15,8 @@ namespace WindowsFormsApp1
     {
         DatabaseConnection dbConnection = new DatabaseConnection();
         DataSet ds = new DataSet();
-        String select = "SELECT AirlineID, AirlineName, Plane.PlaneID, ModelCompany, Model, PlanesInService " +
-                        "FROM Plane LEFT JOIN Airline " +
-                        "ON Plane.PlaneID = Airline.PlaneID " +
-                        "ORDER BY AirlineID, PlaneID";
+        String select = "SELECT AirlineID, AirlineName, PlanesInService " +
+                        "FROM AIRLINE";
         private String[] modelArray;
         private int temp = 0;
         private String tempString = "";
@@ -28,10 +26,6 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
 
         private void AirlinesWindow_Load(object sender, EventArgs e)
         {
@@ -60,21 +54,33 @@ namespace WindowsFormsApp1
 
         private void addAirlineBtn_Click(object sender, EventArgs e)
         {
-            SqlConnection connection = new SqlConnection(dbConnection.getConnection());
-            connection.Open();
-            String insert = "INSERT INTO Airline(AirlineID, AirlineName, PlaneID, PlanesInService) VALUES(@AirlineID, @AirlineName, @PlaneID, @PlanesInService)";
-            SqlCommand command = new SqlCommand(insert, connection);
-            command.Parameters.AddWithValue("@AirlineID", airlineIDBox.Text);
-            command.Parameters.AddWithValue("@AirlineName", airlineBox.Text);
-            command.Parameters.AddWithValue("@PlaneID", planeIDBox.Text);
-            command.Parameters.AddWithValue("@PlanesInService", planesBox.Text);
+            try
+            {
+                SqlConnection connection = new SqlConnection(dbConnection.getConnection());
+                connection.Open();
+                String insert = "INSERT INTO Airline(AirlineID, AirlineName, PlanesInService) VALUES(@AirlineID, @AirlineName, @PlanesInService)";
+                SqlCommand command = new SqlCommand(insert, connection);
+                command.Parameters.AddWithValue("@AirlineID", airlineIDBox.Text);
+                command.Parameters.AddWithValue("@AirlineName", airlineBox.Text);
+                command.Parameters.AddWithValue("@PlanesInService", planesBox.Text);
 
-            command.ExecuteNonQuery();
+                command.ExecuteNonQuery();
 
-            SqlDataAdapter dataadapter = new SqlDataAdapter(select, connection);
-            dataadapter.Fill(ds, "Airline");
-            connection.Close();
-            airlinesGridView.DataSource = ds.Tables[0];
+                SqlDataAdapter dataadapter = new SqlDataAdapter(select, connection);
+                dataadapter.Fill(ds, "Airline");
+                connection.Close();
+                airlinesGridView.DataSource = ds.Tables[0];
+            }
+            catch (SqlException)
+            {
+            }
+        }
+
+        private void airlinesGridView_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            airlineIDBox.Text = airlinesGridView.Rows[e.RowIndex].Cells[0].Value.ToString();
+            airlineBox.Text = airlinesGridView.Rows[e.RowIndex].Cells[1].Value.ToString();
+            planesBox.Text = airlinesGridView.Rows[e.RowIndex].Cells[2].Value.ToString();
         }
     }
 }

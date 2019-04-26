@@ -13,6 +13,7 @@ namespace WindowsFormsApp1
 {
     public partial class EmployeesWindow : Form
     {
+        DatabaseConnection dbConnection = new DatabaseConnection();
         DataSet ds = new DataSet();
 
         public EmployeesWindow()
@@ -32,16 +33,26 @@ namespace WindowsFormsApp1
 
         private void EmployeesWindow_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'uS_AirportsDataSet.Employee' table. You can move, or remove it, as needed.
-            
-            String connectionString = "Data Source=DESKTOP-PG47RQQ;Initial Catalog=US_Airports;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False;";
-            String sql = "SELECT * FROM Employee";
-            SqlConnection connection = new SqlConnection(connectionString);
-            SqlDataAdapter dataadapter = new SqlDataAdapter(sql, connection);
+            SqlConnection connection = new SqlConnection(dbConnection.getConnection());
+            String select = "SELECT EmployeeID, AirlineID, FirstName, LastName, Email FROM EMPLOYEE";
+            SqlDataAdapter dataadapter = new SqlDataAdapter(select, connection);
             connection.Open();
-            dataadapter.Fill(ds, "Employee");
+            dataadapter.Fill(ds, "Employee1");
             connection.Close();
             employeeGridView.DataSource = ds.Tables[0];
-        }                
+        }
+
+        private void backBtn_Click(object sender, EventArgs e)
+        {
+            if (Application.OpenForms.OfType<MapWindow>().Count() == 1)
+            {
+                Application.OpenForms.OfType<MapWindow>().First().Show();
+                this.Hide();
+            }
+            else if (Application.OpenForms.OfType<MapWindow>().Count() > 1)
+            {
+                Application.OpenForms.OfType<MapWindow>().First().Close();
+            }
+        }
     }
 }

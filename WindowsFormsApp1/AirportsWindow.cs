@@ -25,9 +25,13 @@ namespace WindowsFormsApp1
             this.MinimizeBox = false;
  
         }
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            airportIDBox.Text = airportsGridView.Rows[e.RowIndex].Cells[0].Value.ToString();
+            airportStateBox.Text = airportsGridView.Rows[e.RowIndex].Cells[1].Value.ToString();
+            airportCityBox.Text = airportsGridView.Rows[e.RowIndex].Cells[2].Value.ToString();
+            airportNameBox.Text = airportsGridView.Rows[e.RowIndex].Cells[3].Value.ToString();
+            passPerYearBox.Text = airportsGridView.Rows[e.RowIndex].Cells[4].Value.ToString();
         }
 
         private void AirportsWindow_Load(object sender, EventArgs e)
@@ -96,9 +100,6 @@ namespace WindowsFormsApp1
 
         }
 
-
-
-
-
+        
     }
 }

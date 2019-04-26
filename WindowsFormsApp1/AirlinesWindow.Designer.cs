@@ -32,21 +32,19 @@
             this.updateAirlineBtn = new System.Windows.Forms.Button();
             this.addAirlineBtn = new System.Windows.Forms.Button();
             this.airlineLbl = new System.Windows.Forms.Label();
-            this.planeIDLbl = new System.Windows.Forms.Label();
             this.planesLbl = new System.Windows.Forms.Label();
             this.airlineIDLbl = new System.Windows.Forms.Label();
             this.planesBox = new System.Windows.Forms.TextBox();
             this.airlineBox = new System.Windows.Forms.TextBox();
             this.airlineIDBox = new System.Windows.Forms.TextBox();
             this.airlinesGridView = new System.Windows.Forms.DataGridView();
-            this.planeIDBox = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.airlinesGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // backBtn
             // 
             this.backBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.backBtn.Location = new System.Drawing.Point(12, 378);
+            this.backBtn.Location = new System.Drawing.Point(10, 267);
             this.backBtn.Name = "backBtn";
             this.backBtn.Size = new System.Drawing.Size(312, 60);
             this.backBtn.TabIndex = 27;
@@ -57,21 +55,21 @@
             // updateAirlineBtn
             // 
             this.updateAirlineBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updateAirlineBtn.Location = new System.Drawing.Point(11, 307);
+            this.updateAirlineBtn.Location = new System.Drawing.Point(173, 196);
             this.updateAirlineBtn.Name = "updateAirlineBtn";
-            this.updateAirlineBtn.Size = new System.Drawing.Size(312, 65);
+            this.updateAirlineBtn.Size = new System.Drawing.Size(150, 65);
             this.updateAirlineBtn.TabIndex = 26;
-            this.updateAirlineBtn.Text = "Update Airline";
+            this.updateAirlineBtn.Text = "Update";
             this.updateAirlineBtn.UseVisualStyleBackColor = true;
             // 
             // addAirlineBtn
             // 
             this.addAirlineBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addAirlineBtn.Location = new System.Drawing.Point(12, 236);
+            this.addAirlineBtn.Location = new System.Drawing.Point(11, 196);
             this.addAirlineBtn.Name = "addAirlineBtn";
-            this.addAirlineBtn.Size = new System.Drawing.Size(312, 65);
+            this.addAirlineBtn.Size = new System.Drawing.Size(150, 65);
             this.addAirlineBtn.TabIndex = 25;
-            this.addAirlineBtn.Text = "Add Airline";
+            this.addAirlineBtn.Text = "Add";
             this.addAirlineBtn.UseVisualStyleBackColor = true;
             this.addAirlineBtn.Click += new System.EventHandler(this.addAirlineBtn_Click);
             // 
@@ -85,21 +83,11 @@
             this.airlineLbl.TabIndex = 24;
             this.airlineLbl.Text = "Airline";
             // 
-            // planeIDLbl
-            // 
-            this.planeIDLbl.AutoSize = true;
-            this.planeIDLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.planeIDLbl.Location = new System.Drawing.Point(67, 138);
-            this.planeIDLbl.Name = "planeIDLbl";
-            this.planeIDLbl.Size = new System.Drawing.Size(101, 25);
-            this.planeIDLbl.TabIndex = 22;
-            this.planeIDLbl.Text = "Plane ID";
-            // 
             // planesLbl
             // 
             this.planesLbl.AutoSize = true;
             this.planesLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.planesLbl.Location = new System.Drawing.Point(84, 193);
+            this.planesLbl.Location = new System.Drawing.Point(78, 136);
             this.planesLbl.Name = "planesLbl";
             this.planesLbl.Size = new System.Drawing.Size(84, 25);
             this.planesLbl.TabIndex = 21;
@@ -118,7 +106,7 @@
             // planesBox
             // 
             this.planesBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.planesBox.Location = new System.Drawing.Point(174, 192);
+            this.planesBox.Location = new System.Drawing.Point(174, 137);
             this.planesBox.Name = "planesBox";
             this.planesBox.Size = new System.Drawing.Size(149, 26);
             this.planesBox.TabIndex = 19;
@@ -145,29 +133,19 @@
             this.airlinesGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.airlinesGridView.Location = new System.Drawing.Point(333, 12);
             this.airlinesGridView.Name = "airlinesGridView";
-            this.airlinesGridView.Size = new System.Drawing.Size(567, 426);
+            this.airlinesGridView.Size = new System.Drawing.Size(364, 315);
             this.airlinesGridView.TabIndex = 14;
-            this.airlinesGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // planeIDBox
-            // 
-            this.planeIDBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.planeIDBox.Location = new System.Drawing.Point(174, 137);
-            this.planeIDBox.Name = "planeIDBox";
-            this.planeIDBox.Size = new System.Drawing.Size(149, 26);
-            this.planeIDBox.TabIndex = 28;
+            this.airlinesGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.airlinesGridView_CellClick);
             // 
             // AirlinesWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(910, 450);
-            this.Controls.Add(this.planeIDBox);
+            this.ClientSize = new System.Drawing.Size(709, 340);
             this.Controls.Add(this.backBtn);
             this.Controls.Add(this.updateAirlineBtn);
             this.Controls.Add(this.addAirlineBtn);
             this.Controls.Add(this.airlineLbl);
-            this.Controls.Add(this.planeIDLbl);
             this.Controls.Add(this.planesLbl);
             this.Controls.Add(this.airlineIDLbl);
             this.Controls.Add(this.planesBox);
@@ -189,13 +167,11 @@
         private System.Windows.Forms.Button updateAirlineBtn;
         private System.Windows.Forms.Button addAirlineBtn;
         private System.Windows.Forms.Label airlineLbl;
-        private System.Windows.Forms.Label planeIDLbl;
         private System.Windows.Forms.Label planesLbl;
         private System.Windows.Forms.Label airlineIDLbl;
         private System.Windows.Forms.TextBox planesBox;
         private System.Windows.Forms.TextBox airlineBox;
         private System.Windows.Forms.TextBox airlineIDBox;
         private System.Windows.Forms.DataGridView airlinesGridView;
-        private System.Windows.Forms.TextBox planeIDBox;
     }
 }

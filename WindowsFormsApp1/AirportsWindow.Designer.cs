@@ -53,7 +53,7 @@
             this.airportsGridView.Name = "airportsGridView";
             this.airportsGridView.Size = new System.Drawing.Size(567, 426);
             this.airportsGridView.TabIndex = 0;
-            this.airportsGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.airportsGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // airportIDBox
             // 
@@ -66,7 +66,7 @@
             // airportNameBox
             // 
             this.airportNameBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.airportNameBox.Location = new System.Drawing.Point(135, 82);
+            this.airportNameBox.Location = new System.Drawing.Point(135, 191);
             this.airportNameBox.Name = "airportNameBox";
             this.airportNameBox.Size = new System.Drawing.Size(149, 26);
             this.airportNameBox.TabIndex = 2;
@@ -84,7 +84,7 @@
             // airportStateBox
             // 
             this.airportStateBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.airportStateBox.Location = new System.Drawing.Point(135, 192);
+            this.airportStateBox.Location = new System.Drawing.Point(135, 82);
             this.airportStateBox.Name = "airportStateBox";
             this.airportStateBox.Size = new System.Drawing.Size(149, 26);
             this.airportStateBox.TabIndex = 4;
@@ -121,7 +121,7 @@
             // 
             this.airportStateLbl.AutoSize = true;
             this.airportStateLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.airportStateLbl.Location = new System.Drawing.Point(73, 194);
+            this.airportStateLbl.Location = new System.Drawing.Point(73, 84);
             this.airportStateLbl.Name = "airportStateLbl";
             this.airportStateLbl.Size = new System.Drawing.Size(56, 24);
             this.airportStateLbl.TabIndex = 8;
@@ -141,7 +141,7 @@
             // 
             this.airportNameLbl.AutoSize = true;
             this.airportNameLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.airportNameLbl.Location = new System.Drawing.Point(64, 84);
+            this.airportNameLbl.Location = new System.Drawing.Point(64, 193);
             this.airportNameLbl.Name = "airportNameLbl";
             this.airportNameLbl.Size = new System.Drawing.Size(65, 24);
             this.airportNameLbl.TabIndex = 10;
@@ -192,11 +192,11 @@
             this.Controls.Add(this.passPerYearLbl);
             this.Controls.Add(this.airportIDLbl);
             this.Controls.Add(this.passPerYearBox);
-            this.Controls.Add(this.airportStateBox);
             this.Controls.Add(this.airportCityBox);
             this.Controls.Add(this.airportNameBox);
             this.Controls.Add(this.airportIDBox);
             this.Controls.Add(this.airportsGridView);
+            this.Controls.Add(this.airportStateBox);
             this.Name = "AirportsWindow";
             this.Text = "AirportsWindow";
             this.Load += new System.EventHandler(this.AirportsWindow_Load);

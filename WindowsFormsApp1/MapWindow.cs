@@ -95,14 +95,15 @@ namespace WindowsFormsApp1
 
 
             }
-
-            Button[] buttonArray = { alaskaBtn, alabamaBtn, arkansasBtn, arizonaBtn, californiaBtn, coloradoBtn, connecticutBtn, delawareBtn, floridaBtn, georgiaBtn, hawaiiBtn, idahoBtn, illinoisBtn, indianaBtn,
+            Label[] labelArray = {alaskaBtn, alabamaBtn, arkansasBtn, arizonaBtn, californiaBtn, coloradoBtn, connecticutBtn, delawareBtn, floridaBtn, hawaiiBtn, idahoBtn, illinoisBtn, indianaBtn,
             iowaBtn, kansasBtn, kentuckyBtn, louisianaBtn, massachusettsBtn, marylandBtn, maineBtn,  michiganBtn, minnesotaBtn, missouriBtn, mississippiBtn, montanaBtn, northCarolinaBtn, northDakotaBtn, nebraskaBtn,
             newHampshireBtn, newJerseyBtn, newMexicoBtn, nevadaBtn, newYorkBtn, ohioBtn, oklahomaBtn, oregonBtn, pennsylvaniaBtn, rhodeIslandBtn,
             southCarolinaBtn, southDakotaBtn, tennesseeBtn, texasBtn, utahBtn, virginiaBtn, vermontBtn, washingtonBtn, wisconsinBtn, westVirginiaBtn, wyomingBtn };
-            for (int i=0; i<buttonArray.Length; i++)
+
+
+            for (int i=0; i<labelArray.Length; i++)
             {
-                toolTip1.SetToolTip(buttonArray[i], stateText[i]);
+                toolTip1.SetToolTip(labelArray[i], stateText[i]);
             }
             
         }

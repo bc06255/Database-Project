@@ -29,57 +29,57 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.georgiaBtn = new System.Windows.Forms.Button();
+            this.georgiaBtn = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.tennesseeBtn = new System.Windows.Forms.Button();
-            this.northCarolinaBtn = new System.Windows.Forms.Button();
-            this.southCarolinaBtn = new System.Windows.Forms.Button();
-            this.mississippiBtn = new System.Windows.Forms.Button();
-            this.iowaBtn = new System.Windows.Forms.Button();
-            this.kansasBtn = new System.Windows.Forms.Button();
-            this.floridaBtn = new System.Windows.Forms.Button();
-            this.texasBtn = new System.Windows.Forms.Button();
-            this.oklahomaBtn = new System.Windows.Forms.Button();
-            this.missouriBtn = new System.Windows.Forms.Button();
-            this.idahoBtn = new System.Windows.Forms.Button();
-            this.montanaBtn = new System.Windows.Forms.Button();
-            this.wyomingBtn = new System.Windows.Forms.Button();
-            this.northDakotaBtn = new System.Windows.Forms.Button();
-            this.southDakotaBtn = new System.Windows.Forms.Button();
-            this.nebraskaBtn = new System.Windows.Forms.Button();
-            this.coloradoBtn = new System.Windows.Forms.Button();
-            this.newMexicoBtn = new System.Windows.Forms.Button();
-            this.washingtonBtn = new System.Windows.Forms.Button();
-            this.oregonBtn = new System.Windows.Forms.Button();
-            this.californiaBtn = new System.Windows.Forms.Button();
-            this.nevadaBtn = new System.Windows.Forms.Button();
-            this.utahBtn = new System.Windows.Forms.Button();
-            this.arizonaBtn = new System.Windows.Forms.Button();
-            this.kentuckyBtn = new System.Windows.Forms.Button();
-            this.indianaBtn = new System.Windows.Forms.Button();
-            this.illinoisBtn = new System.Windows.Forms.Button();
-            this.wisconsinBtn = new System.Windows.Forms.Button();
-            this.virginiaBtn = new System.Windows.Forms.Button();
-            this.pennsylvaniaBtn = new System.Windows.Forms.Button();
-            this.ohioBtn = new System.Windows.Forms.Button();
-            this.westVirginiaBtn = new System.Windows.Forms.Button();
-            this.maineBtn = new System.Windows.Forms.Button();
-            this.newYorkBtn = new System.Windows.Forms.Button();
-            this.newHampshireBtn = new System.Windows.Forms.Button();
-            this.vermontBtn = new System.Windows.Forms.Button();
-            this.massachusettsBtn = new System.Windows.Forms.Button();
-            this.newJerseyBtn = new System.Windows.Forms.Button();
-            this.rhodeIslandBtn = new System.Windows.Forms.Button();
-            this.marylandBtn = new System.Windows.Forms.Button();
-            this.delawareBtn = new System.Windows.Forms.Button();
-            this.connecticutBtn = new System.Windows.Forms.Button();
-            this.michiganBtn = new System.Windows.Forms.Button();
-            this.hawaiiBtn = new System.Windows.Forms.Button();
-            this.alaskaBtn = new System.Windows.Forms.Button();
-            this.louisianaBtn = new System.Windows.Forms.Button();
-            this.minnesotaBtn = new System.Windows.Forms.Button();
-            this.arkansasBtn = new System.Windows.Forms.Button();
-            this.alabamaBtn = new System.Windows.Forms.Button();
+            this.tennesseeBtn = new System.Windows.Forms.Label();
+            this.northCarolinaBtn = new System.Windows.Forms.Label();
+            this.southCarolinaBtn = new System.Windows.Forms.Label();
+            this.mississippiBtn = new System.Windows.Forms.Label();
+            this.iowaBtn = new System.Windows.Forms.Label();
+            this.kansasBtn = new System.Windows.Forms.Label();
+            this.floridaBtn = new System.Windows.Forms.Label();
+            this.texasBtn = new System.Windows.Forms.Label();
+            this.oklahomaBtn = new System.Windows.Forms.Label();
+            this.missouriBtn = new System.Windows.Forms.Label();
+            this.idahoBtn = new System.Windows.Forms.Label();
+            this.montanaBtn = new System.Windows.Forms.Label();
+            this.wyomingBtn = new System.Windows.Forms.Label();
+            this.northDakotaBtn = new System.Windows.Forms.Label();
+            this.southDakotaBtn = new System.Windows.Forms.Label();
+            this.nebraskaBtn = new System.Windows.Forms.Label();
+            this.coloradoBtn = new System.Windows.Forms.Label();
+            this.newMexicoBtn = new System.Windows.Forms.Label();
+            this.washingtonBtn = new System.Windows.Forms.Label();
+            this.oregonBtn = new System.Windows.Forms.Label();
+            this.californiaBtn = new System.Windows.Forms.Label();
+            this.nevadaBtn = new System.Windows.Forms.Label();
+            this.utahBtn = new System.Windows.Forms.Label();
+            this.arizonaBtn = new System.Windows.Forms.Label();
+            this.kentuckyBtn = new System.Windows.Forms.Label();
+            this.indianaBtn = new System.Windows.Forms.Label();
+            this.illinoisBtn = new System.Windows.Forms.Label();
+            this.wisconsinBtn = new System.Windows.Forms.Label();
+            this.virginiaBtn = new System.Windows.Forms.Label();
+            this.pennsylvaniaBtn = new System.Windows.Forms.Label();
+            this.ohioBtn = new System.Windows.Forms.Label();
+            this.westVirginiaBtn = new System.Windows.Forms.Label();
+            this.maineBtn = new System.Windows.Forms.Label();
+            this.newYorkBtn = new System.Windows.Forms.Label();
+            this.newHampshireBtn = new System.Windows.Forms.Label();
+            this.vermontBtn = new System.Windows.Forms.Label();
+            this.massachusettsBtn = new System.Windows.Forms.Label();
+            this.newJerseyBtn = new System.Windows.Forms.Label();
+            this.rhodeIslandBtn = new System.Windows.Forms.Label();
+            this.marylandBtn = new System.Windows.Forms.Label();
+            this.delawareBtn = new System.Windows.Forms.Label();
+            this.connecticutBtn = new System.Windows.Forms.Label();
+            this.michiganBtn = new System.Windows.Forms.Label();
+            this.hawaiiBtn = new System.Windows.Forms.Label();
+            this.alaskaBtn = new System.Windows.Forms.Label();
+            this.louisianaBtn = new System.Windows.Forms.Label();
+            this.minnesotaBtn = new System.Windows.Forms.Label();
+            this.arkansasBtn = new System.Windows.Forms.Label();
+            this.alabamaBtn = new System.Windows.Forms.Label();
             this.manageFlightsBtn = new System.Windows.Forms.Button();
             this.manageEmployeesBtn = new System.Windows.Forms.Button();
             this.manageAirlinesBtn = new System.Windows.Forms.Button();
@@ -96,8 +96,6 @@
             this.georgiaBtn.Size = new System.Drawing.Size(43, 28);
             this.georgiaBtn.TabIndex = 1;
             this.georgiaBtn.Text = "GA";
-            this.georgiaBtn.UseVisualStyleBackColor = true;
-
             // 
             // tennesseeBtn
             // 
@@ -107,7 +105,6 @@
             this.tennesseeBtn.Size = new System.Drawing.Size(39, 28);
             this.tennesseeBtn.TabIndex = 3;
             this.tennesseeBtn.Text = "TN";
-            this.tennesseeBtn.UseVisualStyleBackColor = true;
 
             // 
             // northCarolinaBtn
@@ -118,7 +115,6 @@
             this.northCarolinaBtn.Size = new System.Drawing.Size(42, 28);
             this.northCarolinaBtn.TabIndex = 4;
             this.northCarolinaBtn.Text = "NC";
-            this.northCarolinaBtn.UseVisualStyleBackColor = true;
 
             // 
             // southCarolinaBtn
@@ -129,7 +125,6 @@
             this.southCarolinaBtn.Size = new System.Drawing.Size(41, 28);
             this.southCarolinaBtn.TabIndex = 5;
             this.southCarolinaBtn.Text = "SC";
-            this.southCarolinaBtn.UseVisualStyleBackColor = true;
 
             // 
             // mississippiBtn
@@ -140,7 +135,6 @@
             this.mississippiBtn.Size = new System.Drawing.Size(43, 28);
             this.mississippiBtn.TabIndex = 6;
             this.mississippiBtn.Text = "MS";
-            this.mississippiBtn.UseVisualStyleBackColor = true;
 
             // 
             // iowaBtn
@@ -151,7 +145,6 @@
             this.iowaBtn.Size = new System.Drawing.Size(37, 28);
             this.iowaBtn.TabIndex = 8;
             this.iowaBtn.Text = "IA";
-            this.iowaBtn.UseVisualStyleBackColor = true;
 
             // 
             // kansasBtn
@@ -162,7 +155,6 @@
             this.kansasBtn.Size = new System.Drawing.Size(40, 28);
             this.kansasBtn.TabIndex = 9;
             this.kansasBtn.Text = "KS";
-            this.kansasBtn.UseVisualStyleBackColor = true;
 
             // 
             // floridaBtn
@@ -173,20 +165,16 @@
             this.floridaBtn.Size = new System.Drawing.Size(38, 28);
             this.floridaBtn.TabIndex = 10;
             this.floridaBtn.Text = "FL";
-            this.floridaBtn.UseVisualStyleBackColor = true;
 
             // 
             // texasBtn
             // 
-            this.texasBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.texasBtn.FlatAppearance.BorderSize = 0;
             this.texasBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.texasBtn.Location = new System.Drawing.Point(571, 610);
             this.texasBtn.Name = "texasBtn";
             this.texasBtn.Size = new System.Drawing.Size(40, 28);
             this.texasBtn.TabIndex = 12;
             this.texasBtn.Text = "TX";
-            this.texasBtn.UseVisualStyleBackColor = true;
 
             // 
             // oklahomaBtn
@@ -197,7 +185,6 @@
             this.oklahomaBtn.Size = new System.Drawing.Size(41, 28);
             this.oklahomaBtn.TabIndex = 13;
             this.oklahomaBtn.Text = "OK";
-            this.oklahomaBtn.UseVisualStyleBackColor = true;
 
             // 
             // missouriBtn
@@ -208,7 +195,6 @@
             this.missouriBtn.Size = new System.Drawing.Size(44, 28);
             this.missouriBtn.TabIndex = 14;
             this.missouriBtn.Text = "MO";
-            this.missouriBtn.UseVisualStyleBackColor = true;
 
             // 
             // idahoBtn
@@ -219,7 +205,6 @@
             this.idahoBtn.Size = new System.Drawing.Size(36, 28);
             this.idahoBtn.TabIndex = 15;
             this.idahoBtn.Text = "ID";
-            this.idahoBtn.UseVisualStyleBackColor = true;
 
             // 
             // montanaBtn
@@ -230,7 +215,6 @@
             this.montanaBtn.Size = new System.Drawing.Size(42, 28);
             this.montanaBtn.TabIndex = 16;
             this.montanaBtn.Text = "MT";
-            this.montanaBtn.UseVisualStyleBackColor = true;
 
             // 
             // wyomingBtn
@@ -241,7 +225,6 @@
             this.wyomingBtn.Size = new System.Drawing.Size(45, 28);
             this.wyomingBtn.TabIndex = 17;
             this.wyomingBtn.Text = "WY";
-            this.wyomingBtn.UseVisualStyleBackColor = true;
 
             // 
             // northDakotaBtn
@@ -252,7 +235,6 @@
             this.northDakotaBtn.Size = new System.Drawing.Size(42, 28);
             this.northDakotaBtn.TabIndex = 18;
             this.northDakotaBtn.Text = "ND";
-            this.northDakotaBtn.UseVisualStyleBackColor = true;
 
             // 
             // southDakotaBtn
@@ -263,7 +245,6 @@
             this.southDakotaBtn.Size = new System.Drawing.Size(42, 28);
             this.southDakotaBtn.TabIndex = 19;
             this.southDakotaBtn.Text = "SD";
-            this.southDakotaBtn.UseVisualStyleBackColor = true;
 
             // 
             // nebraskaBtn
@@ -274,7 +255,6 @@
             this.nebraskaBtn.Size = new System.Drawing.Size(41, 28);
             this.nebraskaBtn.TabIndex = 20;
             this.nebraskaBtn.Text = "NE";
-            this.nebraskaBtn.UseVisualStyleBackColor = true;
 
             // 
             // coloradoBtn
@@ -285,7 +265,6 @@
             this.coloradoBtn.Size = new System.Drawing.Size(43, 28);
             this.coloradoBtn.TabIndex = 21;
             this.coloradoBtn.Text = "CO";
-            this.coloradoBtn.UseVisualStyleBackColor = true;
 
             // 
             // newMexicoBtn
@@ -296,7 +275,6 @@
             this.newMexicoBtn.Size = new System.Drawing.Size(43, 28);
             this.newMexicoBtn.TabIndex = 22;
             this.newMexicoBtn.Text = "NM";
-            this.newMexicoBtn.UseVisualStyleBackColor = true;
 
             // 
             // washingtonBtn
@@ -307,7 +285,6 @@
             this.washingtonBtn.Size = new System.Drawing.Size(45, 28);
             this.washingtonBtn.TabIndex = 23;
             this.washingtonBtn.Text = "WA";
-            this.washingtonBtn.UseVisualStyleBackColor = true;
 
             // 
             // oregonBtn
@@ -318,7 +295,6 @@
             this.oregonBtn.Size = new System.Drawing.Size(43, 28);
             this.oregonBtn.TabIndex = 24;
             this.oregonBtn.Text = "OR";
-            this.oregonBtn.UseVisualStyleBackColor = true;
 
             // 
             // californiaBtn
@@ -329,7 +305,6 @@
             this.californiaBtn.Size = new System.Drawing.Size(42, 28);
             this.californiaBtn.TabIndex = 25;
             this.californiaBtn.Text = "CA";
-            this.californiaBtn.UseVisualStyleBackColor = true;
 
             // 
             // nevadaBtn
@@ -340,7 +315,6 @@
             this.nevadaBtn.Size = new System.Drawing.Size(41, 28);
             this.nevadaBtn.TabIndex = 26;
             this.nevadaBtn.Text = "NV";
-            this.nevadaBtn.UseVisualStyleBackColor = true;
 
             // 
             // utahBtn
@@ -351,7 +325,6 @@
             this.utahBtn.Size = new System.Drawing.Size(40, 28);
             this.utahBtn.TabIndex = 27;
             this.utahBtn.Text = "UT";
-            this.utahBtn.UseVisualStyleBackColor = true;
 
             // 
             // arizonaBtn
@@ -362,7 +335,6 @@
             this.arizonaBtn.Size = new System.Drawing.Size(40, 28);
             this.arizonaBtn.TabIndex = 28;
             this.arizonaBtn.Text = "AZ";
-            this.arizonaBtn.UseVisualStyleBackColor = true;
 
             // 
             // kentuckyBtn
@@ -373,7 +345,6 @@
             this.kentuckyBtn.Size = new System.Drawing.Size(41, 28);
             this.kentuckyBtn.TabIndex = 29;
             this.kentuckyBtn.Text = "KY";
-            this.kentuckyBtn.UseVisualStyleBackColor = true;
 
             // 
             // indianaBtn
@@ -384,7 +355,6 @@
             this.indianaBtn.Size = new System.Drawing.Size(37, 28);
             this.indianaBtn.TabIndex = 30;
             this.indianaBtn.Text = "IN";
-            this.indianaBtn.UseVisualStyleBackColor = true;
 
             // 
             // illinoisBtn
@@ -395,7 +365,6 @@
             this.illinoisBtn.Size = new System.Drawing.Size(33, 28);
             this.illinoisBtn.TabIndex = 31;
             this.illinoisBtn.Text = "IL";
-            this.illinoisBtn.UseVisualStyleBackColor = true;
 
             // 
             // wisconsinBtn
@@ -406,7 +375,6 @@
             this.wisconsinBtn.Size = new System.Drawing.Size(39, 28);
             this.wisconsinBtn.TabIndex = 32;
             this.wisconsinBtn.Text = "WI";
-            this.wisconsinBtn.UseVisualStyleBackColor = true;
 
             // 
             // virginiaBtn
@@ -417,7 +385,6 @@
             this.virginiaBtn.Size = new System.Drawing.Size(41, 28);
             this.virginiaBtn.TabIndex = 33;
             this.virginiaBtn.Text = "VA";
-            this.virginiaBtn.UseVisualStyleBackColor = true;
 
             // 
             // pennsylvaniaBtn
@@ -428,7 +395,6 @@
             this.pennsylvaniaBtn.Size = new System.Drawing.Size(40, 28);
             this.pennsylvaniaBtn.TabIndex = 34;
             this.pennsylvaniaBtn.Text = "PN";
-            this.pennsylvaniaBtn.UseVisualStyleBackColor = true;
 
             // 
             // ohioBtn
@@ -439,7 +405,6 @@
             this.ohioBtn.Size = new System.Drawing.Size(43, 28);
             this.ohioBtn.TabIndex = 35;
             this.ohioBtn.Text = "OH";
-            this.ohioBtn.UseVisualStyleBackColor = true;
 
             // 
             // westVirginiaBtn
@@ -450,7 +415,6 @@
             this.westVirginiaBtn.Size = new System.Drawing.Size(45, 28);
             this.westVirginiaBtn.TabIndex = 36;
             this.westVirginiaBtn.Text = "WV";
-            this.westVirginiaBtn.UseVisualStyleBackColor = true;
 
             // 
             // maineBtn
@@ -461,7 +425,6 @@
             this.maineBtn.Size = new System.Drawing.Size(43, 28);
             this.maineBtn.TabIndex = 37;
             this.maineBtn.Text = "ME";
-            this.maineBtn.UseVisualStyleBackColor = true;
 
             // 
             // newYorkBtn
@@ -472,7 +435,6 @@
             this.newYorkBtn.Size = new System.Drawing.Size(41, 28);
             this.newYorkBtn.TabIndex = 38;
             this.newYorkBtn.Text = "NY";
-            this.newYorkBtn.UseVisualStyleBackColor = true;
 
             // 
             // newHampshireBtn
@@ -483,7 +445,6 @@
             this.newHampshireBtn.Size = new System.Drawing.Size(42, 28);
             this.newHampshireBtn.TabIndex = 39;
             this.newHampshireBtn.Text = "NH";
-            this.newHampshireBtn.UseVisualStyleBackColor = true;
 
             // 
             // vermontBtn
@@ -494,7 +455,6 @@
             this.vermontBtn.Size = new System.Drawing.Size(39, 28);
             this.vermontBtn.TabIndex = 40;
             this.vermontBtn.Text = "VT";
-            this.vermontBtn.UseVisualStyleBackColor = true;
 
             // 
             // massachusettsBtn
@@ -505,7 +465,6 @@
             this.massachusettsBtn.Size = new System.Drawing.Size(43, 28);
             this.massachusettsBtn.TabIndex = 41;
             this.massachusettsBtn.Text = "MA";
-            this.massachusettsBtn.UseVisualStyleBackColor = true;
 
             // 
             // newJerseyBtn
@@ -516,7 +475,6 @@
             this.newJerseyBtn.Size = new System.Drawing.Size(38, 28);
             this.newJerseyBtn.TabIndex = 42;
             this.newJerseyBtn.Text = "NJ";
-            this.newJerseyBtn.UseVisualStyleBackColor = true;
 
             // 
             // rhodeIslandBtn
@@ -527,7 +485,6 @@
             this.rhodeIslandBtn.Size = new System.Drawing.Size(36, 28);
             this.rhodeIslandBtn.TabIndex = 43;
             this.rhodeIslandBtn.Text = "RI";
-            this.rhodeIslandBtn.UseVisualStyleBackColor = true;
 
             // 
             // marylandBtn
@@ -538,7 +495,6 @@
             this.marylandBtn.Size = new System.Drawing.Size(44, 28);
             this.marylandBtn.TabIndex = 44;
             this.marylandBtn.Text = "MD";
-            this.marylandBtn.UseVisualStyleBackColor = true;
 
             // 
             // delawareBtn
@@ -549,8 +505,6 @@
             this.delawareBtn.Size = new System.Drawing.Size(42, 28);
             this.delawareBtn.TabIndex = 45;
             this.delawareBtn.Text = "DE";
-            this.delawareBtn.UseVisualStyleBackColor = true;
-
             // 
             // connecticutBtn
             // 
@@ -560,8 +514,6 @@
             this.connecticutBtn.Size = new System.Drawing.Size(39, 28);
             this.connecticutBtn.TabIndex = 46;
             this.connecticutBtn.Text = "CT";
-            this.connecticutBtn.UseVisualStyleBackColor = true;
-
             // 
             // michiganBtn
             // 
@@ -572,7 +524,6 @@
             this.michiganBtn.Size = new System.Drawing.Size(37, 28);
             this.michiganBtn.TabIndex = 47;
             this.michiganBtn.Text = "MI";
-            this.michiganBtn.UseVisualStyleBackColor = true;
 
             // 
             // hawaiiBtn
@@ -583,7 +534,6 @@
             this.hawaiiBtn.Size = new System.Drawing.Size(36, 28);
             this.hawaiiBtn.TabIndex = 48;
             this.hawaiiBtn.Text = "HI";
-            this.hawaiiBtn.UseVisualStyleBackColor = true;
 
             // 
             // alaskaBtn
@@ -594,7 +544,6 @@
             this.alaskaBtn.Size = new System.Drawing.Size(40, 28);
             this.alaskaBtn.TabIndex = 49;
             this.alaskaBtn.Text = "AK";
-            this.alaskaBtn.UseVisualStyleBackColor = true;
 
             // 
             // louisianaBtn
@@ -605,7 +554,6 @@
             this.louisianaBtn.Size = new System.Drawing.Size(40, 28);
             this.louisianaBtn.TabIndex = 11;
             this.louisianaBtn.Text = "LA";
-            this.louisianaBtn.UseVisualStyleBackColor = true;
 
             // 
             // minnesotaBtn
@@ -616,7 +564,6 @@
             this.minnesotaBtn.Size = new System.Drawing.Size(43, 28);
             this.minnesotaBtn.TabIndex = 50;
             this.minnesotaBtn.Text = "MN";
-            this.minnesotaBtn.UseVisualStyleBackColor = true;
 
             // 
             // arkansasBtn
@@ -627,7 +574,6 @@
             this.arkansasBtn.Size = new System.Drawing.Size(42, 28);
             this.arkansasBtn.TabIndex = 2;
             this.arkansasBtn.Text = "AR";
-            this.arkansasBtn.UseVisualStyleBackColor = true;
 
             // 
             // alabamaBtn
@@ -638,7 +584,6 @@
             this.alabamaBtn.Size = new System.Drawing.Size(39, 28);
             this.alabamaBtn.TabIndex = 7;
             this.alabamaBtn.Text = "AL";
-            this.alabamaBtn.UseVisualStyleBackColor = true;
 
             // 
             // manageFlightsBtn
@@ -650,7 +595,6 @@
             this.manageFlightsBtn.TabIndex = 51;
             this.manageFlightsBtn.Text = "Manage Flights";
             this.manageFlightsBtn.UseVisualStyleBackColor = true;
-
             // 
             // manageEmployeesBtn
             // 
@@ -767,57 +711,57 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button georgiaBtn;
+        private System.Windows.Forms.Label georgiaBtn;
         private System.Windows.Forms.ToolTip toolTip1;
-        private System.Windows.Forms.Button arkansasBtn;
-        private System.Windows.Forms.Button tennesseeBtn;
-        private System.Windows.Forms.Button northCarolinaBtn;
-        private System.Windows.Forms.Button southCarolinaBtn;
-        private System.Windows.Forms.Button mississippiBtn;
-        private System.Windows.Forms.Button alabamaBtn;
-        private System.Windows.Forms.Button iowaBtn;
-        private System.Windows.Forms.Button kansasBtn;
-        private System.Windows.Forms.Button floridaBtn;
-        private System.Windows.Forms.Button louisianaBtn;
-        private System.Windows.Forms.Button texasBtn;
-        private System.Windows.Forms.Button oklahomaBtn;
-        private System.Windows.Forms.Button missouriBtn;
-        private System.Windows.Forms.Button idahoBtn;
-        private System.Windows.Forms.Button montanaBtn;
-        private System.Windows.Forms.Button wyomingBtn;
-        private System.Windows.Forms.Button northDakotaBtn;
-        private System.Windows.Forms.Button southDakotaBtn;
-        private System.Windows.Forms.Button nebraskaBtn;
-        private System.Windows.Forms.Button coloradoBtn;
-        private System.Windows.Forms.Button newMexicoBtn;
-        private System.Windows.Forms.Button washingtonBtn;
-        private System.Windows.Forms.Button oregonBtn;
-        private System.Windows.Forms.Button californiaBtn;
-        private System.Windows.Forms.Button nevadaBtn;
-        private System.Windows.Forms.Button utahBtn;
-        private System.Windows.Forms.Button arizonaBtn;
-        private System.Windows.Forms.Button kentuckyBtn;
-        private System.Windows.Forms.Button indianaBtn;
-        private System.Windows.Forms.Button illinoisBtn;
-        private System.Windows.Forms.Button wisconsinBtn;
-        private System.Windows.Forms.Button virginiaBtn;
-        private System.Windows.Forms.Button pennsylvaniaBtn;
-        private System.Windows.Forms.Button ohioBtn;
-        private System.Windows.Forms.Button westVirginiaBtn;
-        private System.Windows.Forms.Button maineBtn;
-        private System.Windows.Forms.Button newYorkBtn;
-        private System.Windows.Forms.Button newHampshireBtn;
-        private System.Windows.Forms.Button vermontBtn;
-        private System.Windows.Forms.Button massachusettsBtn;
-        private System.Windows.Forms.Button newJerseyBtn;
-        private System.Windows.Forms.Button rhodeIslandBtn;
-        private System.Windows.Forms.Button marylandBtn;
-        private System.Windows.Forms.Button delawareBtn;
-        private System.Windows.Forms.Button connecticutBtn;
-        private System.Windows.Forms.Button michiganBtn;
-        private System.Windows.Forms.Button hawaiiBtn;
-        private System.Windows.Forms.Button alaskaBtn;
-        private System.Windows.Forms.Button minnesotaBtn;
+        private System.Windows.Forms.Label arkansasBtn;
+        private System.Windows.Forms.Label tennesseeBtn;
+        private System.Windows.Forms.Label northCarolinaBtn;
+        private System.Windows.Forms.Label southCarolinaBtn;
+        private System.Windows.Forms.Label mississippiBtn;
+        private System.Windows.Forms.Label alabamaBtn;
+        private System.Windows.Forms.Label iowaBtn;
+        private System.Windows.Forms.Label kansasBtn;
+        private System.Windows.Forms.Label floridaBtn;
+        private System.Windows.Forms.Label louisianaBtn;
+        private System.Windows.Forms.Label texasBtn;
+        private System.Windows.Forms.Label oklahomaBtn;
+        private System.Windows.Forms.Label missouriBtn;
+        private System.Windows.Forms.Label idahoBtn;
+        private System.Windows.Forms.Label montanaBtn;
+        private System.Windows.Forms.Label wyomingBtn;
+        private System.Windows.Forms.Label northDakotaBtn;
+        private System.Windows.Forms.Label southDakotaBtn;
+        private System.Windows.Forms.Label nebraskaBtn;
+        private System.Windows.Forms.Label coloradoBtn;
+        private System.Windows.Forms.Label newMexicoBtn;
+        private System.Windows.Forms.Label washingtonBtn;
+        private System.Windows.Forms.Label oregonBtn;
+        private System.Windows.Forms.Label californiaBtn;
+        private System.Windows.Forms.Label nevadaBtn;
+        private System.Windows.Forms.Label utahBtn;
+        private System.Windows.Forms.Label arizonaBtn;
+        private System.Windows.Forms.Label kentuckyBtn;
+        private System.Windows.Forms.Label indianaBtn;
+        private System.Windows.Forms.Label illinoisBtn;
+        private System.Windows.Forms.Label wisconsinBtn;
+        private System.Windows.Forms.Label virginiaBtn;
+        private System.Windows.Forms.Label pennsylvaniaBtn;
+        private System.Windows.Forms.Label ohioBtn;
+        private System.Windows.Forms.Label westVirginiaBtn;
+        private System.Windows.Forms.Label maineBtn;
+        private System.Windows.Forms.Label newYorkBtn;
+        private System.Windows.Forms.Label newHampshireBtn;
+        private System.Windows.Forms.Label vermontBtn;
+        private System.Windows.Forms.Label massachusettsBtn;
+        private System.Windows.Forms.Label newJerseyBtn;
+        private System.Windows.Forms.Label rhodeIslandBtn;
+        private System.Windows.Forms.Label marylandBtn;
+        private System.Windows.Forms.Label delawareBtn;
+        private System.Windows.Forms.Label connecticutBtn;
+        private System.Windows.Forms.Label michiganBtn;
+        private System.Windows.Forms.Label hawaiiBtn;
+        private System.Windows.Forms.Label alaskaBtn;
+        private System.Windows.Forms.Label minnesotaBtn;
         private System.Windows.Forms.Button manageFlightsBtn;
         private System.Windows.Forms.Button manageEmployeesBtn;
         private System.Windows.Forms.Button manageAirlinesBtn;
