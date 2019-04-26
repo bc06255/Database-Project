@@ -18,6 +18,8 @@ namespace WindowsFormsApp1
         EmployeesWindow employeesWindow = new EmployeesWindow();
         AirportsWindow airportsWindow = new AirportsWindow();
         FlightsWindow flightsWindow = new FlightsWindow();
+        CustomersWindow customersWindow = new CustomersWindow();
+        SearchWindow searchWindow = new SearchWindow();
         public int statenum = 50;
 
 
@@ -176,6 +178,32 @@ namespace WindowsFormsApp1
             else
             {
                 flightsWindow.Show();
+            }
+            this.Hide();
+        }
+
+        private void manageCustomersBtn_Click(object sender, EventArgs e)
+        {
+            if (Application.OpenForms.OfType<CustomersWindow>().Count() == 1)
+            {
+                Application.OpenForms.OfType<CustomersWindow>().First().Show();
+            }
+            else
+            {
+                customersWindow.Show();
+            }
+            this.Hide();
+        }
+
+        private void searchBtn_Click(object sender, EventArgs e)
+        {
+            if (Application.OpenForms.OfType<SearchWindow>().Count() == 1)
+            {
+                Application.OpenForms.OfType<SearchWindow>().First().Show();
+            }
+            else
+            {
+                searchWindow.Show();
             }
             this.Hide();
         }

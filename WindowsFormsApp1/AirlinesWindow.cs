@@ -83,5 +83,50 @@ namespace WindowsFormsApp1
             airlineBox.Text = airlinesGridView.Rows[e.RowIndex].Cells[1].Value.ToString();
             planesBox.Text = airlinesGridView.Rows[e.RowIndex].Cells[2].Value.ToString();
         }
+
+        private void deleteBtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                SqlConnection connection = new SqlConnection(dbConnection.getConnection());
+                connection.Open();
+                String delete = "DELETE FROM AIRLINE WHERE AirlineID = " + airlineIDBox.Text;
+                SqlCommand command = new SqlCommand(delete, connection);
+
+                command.ExecuteNonQuery();
+
+                SqlDataAdapter dataadapter = new SqlDataAdapter(select, connection);
+                ds.Tables[0].Clear();
+                dataadapter.Fill(ds, "Airline");
+                connection.Close();
+                airlinesGridView.DataSource = ds.Tables[0];
+            }
+            catch (SqlException) { }
+        }
+
+        private void updateAirlineBtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                SqlConnection connection = new SqlConnection(dbConnection.getConnection());
+                connection.Open();
+                String update = "UPDATE AIRLINE SET AirlineName = @AirlineName, PlanesInService = @Planes WHERE AirlineID = @AirlineID";
+                SqlCommand command = new SqlCommand(update, connection);
+                command.Parameters.AddWithValue("@AirlineID", airlineIDBox.Text);
+                command.Parameters.AddWithValue("@AirlineName", airlineBox.Text);
+                command.Parameters.AddWithValue("@Planes", planesBox.Text);
+
+
+                command.ExecuteNonQuery();
+
+                SqlDataAdapter dataadapter = new SqlDataAdapter(select, connection);
+                ds.Tables[0].Clear();
+                dataadapter.Fill(ds, "Airline");
+                connection.Close();
+                airlinesGridView.DataSource = ds.Tables[0];
+
+            }
+            catch (SqlException) { }
+        }
     }
 }

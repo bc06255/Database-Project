@@ -84,7 +84,9 @@
             this.manageEmployeesBtn = new System.Windows.Forms.Button();
             this.manageAirlinesBtn = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.manageCustomersBtn = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.searchBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -542,7 +544,7 @@
             // manageFlightsBtn
             // 
             this.manageFlightsBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.manageFlightsBtn.Location = new System.Drawing.Point(649, 868);
+            this.manageFlightsBtn.Location = new System.Drawing.Point(1295, 306);
             this.manageFlightsBtn.Name = "manageFlightsBtn";
             this.manageFlightsBtn.Size = new System.Drawing.Size(316, 81);
             this.manageFlightsBtn.TabIndex = 51;
@@ -553,7 +555,7 @@
             // manageEmployeesBtn
             // 
             this.manageEmployeesBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.manageEmployeesBtn.Location = new System.Drawing.Point(971, 868);
+            this.manageEmployeesBtn.Location = new System.Drawing.Point(1295, 456);
             this.manageEmployeesBtn.Name = "manageEmployeesBtn";
             this.manageEmployeesBtn.Size = new System.Drawing.Size(316, 81);
             this.manageEmployeesBtn.TabIndex = 52;
@@ -564,7 +566,7 @@
             // manageAirlinesBtn
             // 
             this.manageAirlinesBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.manageAirlinesBtn.Location = new System.Drawing.Point(327, 868);
+            this.manageAirlinesBtn.Location = new System.Drawing.Point(1295, 156);
             this.manageAirlinesBtn.Name = "manageAirlinesBtn";
             this.manageAirlinesBtn.Size = new System.Drawing.Size(316, 81);
             this.manageAirlinesBtn.TabIndex = 53;
@@ -575,13 +577,24 @@
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(5, 868);
+            this.button4.Location = new System.Drawing.Point(1295, 6);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(316, 81);
             this.button4.TabIndex = 54;
             this.button4.Text = "Manage Airports";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // manageCustomersBtn
+            // 
+            this.manageCustomersBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.manageCustomersBtn.Location = new System.Drawing.Point(1295, 606);
+            this.manageCustomersBtn.Name = "manageCustomersBtn";
+            this.manageCustomersBtn.Size = new System.Drawing.Size(316, 81);
+            this.manageCustomersBtn.TabIndex = 55;
+            this.manageCustomersBtn.Text = "Manage Customers";
+            this.manageCustomersBtn.UseVisualStyleBackColor = true;
+            this.manageCustomersBtn.Click += new System.EventHandler(this.manageCustomersBtn_Click);
             // 
             // pictureBox1
             // 
@@ -593,11 +606,24 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // searchBtn
+            // 
+            this.searchBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchBtn.Location = new System.Drawing.Point(1295, 781);
+            this.searchBtn.Name = "searchBtn";
+            this.searchBtn.Size = new System.Drawing.Size(316, 81);
+            this.searchBtn.TabIndex = 56;
+            this.searchBtn.Text = "Search";
+            this.searchBtn.UseVisualStyleBackColor = true;
+            this.searchBtn.Click += new System.EventHandler(this.searchBtn_Click);
+            // 
             // MapWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1293, 1046);
+            this.ClientSize = new System.Drawing.Size(1617, 870);
+            this.Controls.Add(this.searchBtn);
+            this.Controls.Add(this.manageCustomersBtn);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.manageAirlinesBtn);
             this.Controls.Add(this.manageEmployeesBtn);
@@ -720,5 +746,7 @@
         private System.Windows.Forms.Button manageEmployeesBtn;
         private System.Windows.Forms.Button manageAirlinesBtn;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button manageCustomersBtn;
+        private System.Windows.Forms.Button searchBtn;
     }
 }

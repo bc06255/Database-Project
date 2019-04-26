@@ -71,7 +71,6 @@
             this.airportNameBox.Name = "airportNameBox";
             this.airportNameBox.Size = new System.Drawing.Size(149, 26);
             this.airportNameBox.TabIndex = 2;
-            this.airportNameBox.TextChanged += new System.EventHandler(this.airportNameBox_TextChanged);
             // 
             // airportCityBox
             // 
@@ -80,7 +79,6 @@
             this.airportCityBox.Name = "airportCityBox";
             this.airportCityBox.Size = new System.Drawing.Size(149, 26);
             this.airportCityBox.TabIndex = 3;
-            this.airportCityBox.TextChanged += new System.EventHandler(this.airportCityBox_TextChanged);
             // 
             // airportStateBox
             // 

@@ -38,6 +38,7 @@
             this.airlineBox = new System.Windows.Forms.TextBox();
             this.airlineIDBox = new System.Windows.Forms.TextBox();
             this.airlinesGridView = new System.Windows.Forms.DataGridView();
+            this.deleteBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.airlinesGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -46,7 +47,7 @@
             this.backBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.backBtn.Location = new System.Drawing.Point(10, 267);
             this.backBtn.Name = "backBtn";
-            this.backBtn.Size = new System.Drawing.Size(312, 60);
+            this.backBtn.Size = new System.Drawing.Size(151, 60);
             this.backBtn.TabIndex = 27;
             this.backBtn.Text = "Back";
             this.backBtn.UseVisualStyleBackColor = true;
@@ -61,6 +62,7 @@
             this.updateAirlineBtn.TabIndex = 26;
             this.updateAirlineBtn.Text = "Update";
             this.updateAirlineBtn.UseVisualStyleBackColor = true;
+            this.updateAirlineBtn.Click += new System.EventHandler(this.updateAirlineBtn_Click);
             // 
             // addAirlineBtn
             // 
@@ -137,11 +139,23 @@
             this.airlinesGridView.TabIndex = 14;
             this.airlinesGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.airlinesGridView_CellClick);
             // 
+            // deleteBtn
+            // 
+            this.deleteBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deleteBtn.Location = new System.Drawing.Point(173, 267);
+            this.deleteBtn.Name = "deleteBtn";
+            this.deleteBtn.Size = new System.Drawing.Size(150, 60);
+            this.deleteBtn.TabIndex = 28;
+            this.deleteBtn.Text = "Delete";
+            this.deleteBtn.UseVisualStyleBackColor = true;
+            this.deleteBtn.Click += new System.EventHandler(this.deleteBtn_Click);
+            // 
             // AirlinesWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(709, 340);
+            this.Controls.Add(this.deleteBtn);
             this.Controls.Add(this.backBtn);
             this.Controls.Add(this.updateAirlineBtn);
             this.Controls.Add(this.addAirlineBtn);
@@ -173,5 +187,6 @@
         private System.Windows.Forms.TextBox airlineBox;
         private System.Windows.Forms.TextBox airlineIDBox;
         private System.Windows.Forms.DataGridView airlinesGridView;
+        private System.Windows.Forms.Button deleteBtn;
     }
 }

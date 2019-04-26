@@ -111,5 +111,32 @@ namespace WindowsFormsApp1
             
 
         }
+
+        private void updateBtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                SqlConnection connection = new SqlConnection(dbConnection.getConnection());
+                connection.Open();
+                String update = "UPDATE FLIGHT SET FlightDate = @FlightDate, SourceAirportID = @Source, DestAirportID = @Dest, PlaneID = @PlaneID, CrewID = @CrewID WHERE FlightID = @FlightID";
+                SqlCommand command = new SqlCommand(update, connection);
+                command.Parameters.AddWithValue("@FlightID", flightIDBox.Text);
+                command.Parameters.AddWithValue("@FlightDate", flightDateBox.Text);
+                command.Parameters.AddWithValue("@Source", sourceBox.Text);
+                command.Parameters.AddWithValue("@Dest", destBox.Text);
+                command.Parameters.AddWithValue("@PlaneID", planeIDBox.Text);
+                command.Parameters.AddWithValue("@CrewID", crewIDBox.Text);
+
+                command.ExecuteNonQuery();
+
+                SqlDataAdapter dataadapter = new SqlDataAdapter(select, connection);
+                ds.Tables[0].Clear();
+                dataadapter.Fill(ds, "Flight");
+                connection.Close();
+                flightsGridView.DataSource = ds.Tables[0];
+
+            }
+            catch (SqlException) { }
+        }
     }
 }

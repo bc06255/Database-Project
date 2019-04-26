@@ -45,31 +45,6 @@ namespace WindowsFormsApp1
             airportsGridView.DataSource = ds.Tables[0];
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void airportCityBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void airportNameBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-        }
-        
         private void backBtn_Click(object sender, EventArgs e)
         {
             if (Application.OpenForms.OfType<MapWindow>().Count() == 1)
@@ -168,6 +143,7 @@ namespace WindowsFormsApp1
                 command.ExecuteNonQuery();
 
                 SqlDataAdapter dataadapter = new SqlDataAdapter(update, connection);
+                ds.Tables[0].Clear();
                 dataadapter.Fill(ds, "Airport");
                 connection.Close();
                 airportsGridView.DataSource = ds.Tables[0];
